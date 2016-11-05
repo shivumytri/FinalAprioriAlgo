@@ -1,0 +1,1210 @@
+Partitioning Started...
+Enter file name
+Partition Created Successfully.
+min support :0.6
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 4.157112121582031 mb
+ Total time ~ 29 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 24
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 23
+ Maximum memory usage : 4.157112121582031 mb
+ Total time ~ 16 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 161
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 147
+ Maximum memory usage : 4.469047546386719 mb
+ Total time ~ 30 ms
+===================================================
+database size :187
+=============  APRIORI - STATS =============
+ Candidates count : 1805
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 1675
+ Maximum memory usage : 4.876335144042969 mb
+ Total time ~ 502 ms
+===================================================
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 15.5830078125 mb
+ Total time ~ 28 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 15
+ Maximum memory usage : 15.903129577636719 mb
+ Total time ~ 12 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 170
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 155
+ Maximum memory usage : 15.903129577636719 mb
+ Total time ~ 25 ms
+===================================================
+database size :152
+=============  APRIORI - STATS =============
+ Candidates count : 3612
+ The algorithm stopped at size 10, because there is no candidate
+ Frequent itemsets count : 3495
+ Maximum memory usage : 5.5160675048828125 mb
+ Total time ~ 473 ms
+===================================================
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 4.576072692871094 mb
+ Total time ~ 26 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 4.576072692871094 mb
+ Total time ~ 8 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 31
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 31
+ Maximum memory usage : 4.895057678222656 mb
+ Total time ~ 13 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 67
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 63
+ Maximum memory usage : 4.895057678222656 mb
+ Total time ~ 13 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 11
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 8
+ Maximum memory usage : 12.140922546386719 mb
+ Total time ~ 137 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 984
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 951
+ Maximum memory usage : 12.460945129394531 mb
+ Total time ~ 128 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 11
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 8
+ Maximum memory usage : 12.143951416015625 mb
+ Total time ~ 34 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 984
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 951
+ Maximum memory usage : 12.463951110839844 mb
+ Total time ~ 93 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 11
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 8
+ Maximum memory usage : 11.941123962402344 mb
+ Total time ~ 37 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 984
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 951
+ Maximum memory usage : 12.581329345703125 mb
+ Total time ~ 149 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 15.585952758789062 mb
+ Total time ~ 29 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 15
+ Maximum memory usage : 15.905975341796875 mb
+ Total time ~ 9 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 170
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 155
+ Maximum memory usage : 15.905975341796875 mb
+ Total time ~ 25 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 4.844413757324219 mb
+ Total time ~ 24 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 4.844413757324219 mb
+ Total time ~ 7 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 31
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 31
+ Maximum memory usage : 5.156379699707031 mb
+ Total time ~ 13 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 67
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 63
+ Maximum memory usage : 5.156379699707031 mb
+ Total time ~ 17 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 4.907012939453125 mb
+ Total time ~ 25 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 4.907012939453125 mb
+ Total time ~ 4 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 31
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 31
+ Maximum memory usage : 5.2189483642578125 mb
+ Total time ~ 8 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 67
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 63
+ Maximum memory usage : 5.2189483642578125 mb
+ Total time ~ 12 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 11
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 8
+ Maximum memory usage : 12.161109924316406 mb
+ Total time ~ 27 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 984
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 951
+ Maximum memory usage : 12.481132507324219 mb
+ Total time ~ 82 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 15.603233337402344 mb
+ Total time ~ 18 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 15
+ Maximum memory usage : 15.923255920410156 mb
+ Total time ~ 8 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 170
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 155
+ Maximum memory usage : 15.923255920410156 mb
+ Total time ~ 19 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 16.0 mb
+ Total time ~ 25 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 15
+ Maximum memory usage : 16.0 mb
+ Total time ~ 11 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 170
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 155
+ Maximum memory usage : 2.0806045532226562 mb
+ Total time ~ 27 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 15.603202819824219 mb
+ Total time ~ 25 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 15
+ Maximum memory usage : 15.923225402832031 mb
+ Total time ~ 7 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 170
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 155
+ Maximum memory usage : 15.923225402832031 mb
+ Total time ~ 20 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 15.603195190429688 mb
+ Total time ~ 21 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 15
+ Maximum memory usage : 15.9232177734375 mb
+ Total time ~ 6 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 170
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 155
+ Maximum memory usage : 15.9232177734375 mb
+ Total time ~ 16 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 15.603096008300781 mb
+ Total time ~ 29 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 15
+ Maximum memory usage : 15.923118591308594 mb
+ Total time ~ 7 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 170
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 155
+ Maximum memory usage : 15.923118591308594 mb
+ Total time ~ 20 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 15.66571044921875 mb
+ Total time ~ 17 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 15
+ Maximum memory usage : 15.66571044921875 mb
+ Total time ~ 9 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 170
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 155
+ Maximum memory usage : 15.985733032226562 mb
+ Total time ~ 28 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 15.673599243164062 mb
+ Total time ~ 24 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 15
+ Maximum memory usage : 15.673599243164062 mb
+ Total time ~ 6 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 170
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 155
+ Maximum memory usage : 15.99365234375 mb
+ Total time ~ 20 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 4.888114929199219 mb
+ Total time ~ 21 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 4.888114929199219 mb
+ Total time ~ 4 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 31
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 31
+ Maximum memory usage : 5.20123291015625 mb
+ Total time ~ 11 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 67
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 63
+ Maximum memory usage : 5.20123291015625 mb
+ Total time ~ 9 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 4.8220672607421875 mb
+ Total time ~ 26 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 4.8220672607421875 mb
+ Total time ~ 4 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 31
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 31
+ Maximum memory usage : 5.163475036621094 mb
+ Total time ~ 11 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 67
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 63
+ Maximum memory usage : 5.163475036621094 mb
+ Total time ~ 12 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 5.233497619628906 mb
+ Total time ~ 36 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 5.233497619628906 mb
+ Total time ~ 5 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 31
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 31
+ Maximum memory usage : 5.546760559082031 mb
+ Total time ~ 11 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 67
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 63
+ Maximum memory usage : 5.546760559082031 mb
+ Total time ~ 16 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 4.758323669433594 mb
+ Total time ~ 29 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 4.758323669433594 mb
+ Total time ~ 6 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 31
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 31
+ Maximum memory usage : 5.0684967041015625 mb
+ Total time ~ 11 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 67
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 63
+ Maximum memory usage : 5.378562927246094 mb
+ Total time ~ 12 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 8.494041442871094 mb
+ Total time ~ 26 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 8.813728332519531 mb
+ Total time ~ 8 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 8.813728332519531 mb
+ Total time ~ 17 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 9.156867980957031 mb
+ Total time ~ 6 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 28
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 27
+ Maximum memory usage : 9.476600646972656 mb
+ Total time ~ 7 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 8.492431640625 mb
+ Total time ~ 23 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 8.492431640625 mb
+ Total time ~ 5 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 8.80255126953125 mb
+ Total time ~ 4 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 21
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 19
+ Maximum memory usage : 8.80255126953125 mb
+ Total time ~ 13 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 28
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 27
+ Maximum memory usage : 9.112678527832031 mb
+ Total time ~ 6 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 12.307518005371094 mb
+ Total time ~ 37 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 1
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 1
+ Maximum memory usage : 12.626029968261719 mb
+ Total time ~ 8 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 0
+ The algorithm stopped at size 0, because there is no candidate
+ Frequent itemsets count : 0
+ Maximum memory usage : 0.0 mb
+ Total time ~ -1458968205221 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 1
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 1
+ Maximum memory usage : 12.944534301757812 mb
+ Total time ~ 4 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 0
+ The algorithm stopped at size 0, because there is no candidate
+ Frequent itemsets count : 0
+ Maximum memory usage : 0.0 mb
+ Total time ~ -1458968205243 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 28
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 27
+ Maximum memory usage : 13.278694152832031 mb
+ Total time ~ 7 ms
+===================================================
+database size :152
+min support :0.7
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 3
+ Maximum memory usage : 12.234817504882812 mb
+ Total time ~ 27 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 1
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 1
+ Maximum memory usage : 12.234817504882812 mb
+ Total time ~ 7 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 1
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 1
+ Maximum memory usage : 12.553298950195312 mb
+ Total time ~ 3 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 7
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 7
+ Maximum memory usage : 12.553298950195312 mb
+ Total time ~ 5 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 21
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 19
+ Maximum memory usage : 12.871780395507812 mb
+ Total time ~ 5 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 14
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 13
+ Maximum memory usage : 12.871780395507812 mb
+ Total time ~ 4 ms
+===================================================
+database size :152
+min support :0.5
+=============  APRIORI - STATS =============
+ Candidates count : 22
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 10
+ Maximum memory usage : 4.1613311767578125 mb
+ Total time ~ 69 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 101
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 91
+ Maximum memory usage : 4.1613311767578125 mb
+ Total time ~ 36 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 256
+ The algorithm stopped at size 8, because there is no candidate
+ Frequent itemsets count : 247
+ Maximum memory usage : 4.4737701416015625 mb
+ Total time ~ 30 ms
+===================================================
+database size :187
+min support :0.6
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 4.508857727050781 mb
+ Total time ~ 35 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 24
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 23
+ Maximum memory usage : 4.8182373046875 mb
+ Total time ~ 20 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 161
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 147
+ Maximum memory usage : 5.43695068359375 mb
+ Total time ~ 37 ms
+===================================================
+database size :187
+min support :0.5
+=============  APRIORI - STATS =============
+ Candidates count : 22
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 10
+ Maximum memory usage : 4.473876953125 mb
+ Total time ~ 68 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 101
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 91
+ Maximum memory usage : 4.7863616943359375 mb
+ Total time ~ 21 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 256
+ The algorithm stopped at size 8, because there is no candidate
+ Frequent itemsets count : 247
+ Maximum memory usage : 5.7237091064453125 mb
+ Total time ~ 32 ms
+===================================================
+database size :187
+min support :0.6
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 4.13189697265625 mb
+ Total time ~ 35 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 24
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 23
+ Maximum memory usage : 4.7572784423828125 mb
+ Total time ~ 28 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 161
+ The algorithm stopped at size 7, because there is no candidate
+ Frequent itemsets count : 147
+ Maximum memory usage : 5.6953277587890625 mb
+ Total time ~ 30 ms
+===================================================
+database size :187
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 29
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 22
+ Maximum memory usage : 15.041358947753906 mb
+ Total time ~ 22 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 81
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 65
+ Maximum memory usage : 15.361381530761719 mb
+ Total time ~ 17 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 511
+ The algorithm stopped at size 10, because there is no candidate
+ Frequent itemsets count : 511
+ Maximum memory usage : 15.361381530761719 mb
+ Total time ~ 91 ms
+===================================================
+database size :152
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 29
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 22
+ Maximum memory usage : 15.361602783203125 mb
+ Total time ~ 24 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 81
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 65
+ Maximum memory usage : 15.681625366210938 mb
+ Total time ~ 11 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 511
+ The algorithm stopped at size 10, because there is no candidate
+ Frequent itemsets count : 511
+ Maximum memory usage : 15.681625366210938 mb
+ Total time ~ 51 ms
+===================================================
+database size :152
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 29
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 22
+ Maximum memory usage : 15.533279418945312 mb
+ Total time ~ 20 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 81
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 65
+ Maximum memory usage : 15.533279418945312 mb
+ Total time ~ 12 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 255
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 255
+ Maximum memory usage : 15.853279113769531 mb
+ Total time ~ 22 ms
+===================================================
+database size :152
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 29
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 22
+ Maximum memory usage : 15.135063171386719 mb
+ Total time ~ 24 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 81
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 65
+ Maximum memory usage : 15.135063171386719 mb
+ Total time ~ 15 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 255
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 255
+ Maximum memory usage : 15.470703125 mb
+ Total time ~ 36 ms
+===================================================
+database size :152
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 29
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 22
+ Maximum memory usage : 15.533309936523438 mb
+ Total time ~ 52 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 81
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 65
+ Maximum memory usage : 15.533309936523438 mb
+ Total time ~ 19 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 255
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 255
+ Maximum memory usage : 15.853309631347656 mb
+ Total time ~ 35 ms
+===================================================
+database size :152
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 29
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 22
+ Maximum memory usage : 14.9190673828125 mb
+ Total time ~ 123 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 81
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 65
+ Maximum memory usage : 14.9190673828125 mb
+ Total time ~ 26 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 255
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 255
+ Maximum memory usage : 15.254730224609375 mb
+ Total time ~ 25 ms
+===================================================
+database size :152
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 29
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 22
+ Maximum memory usage : 15.012283325195312 mb
+ Total time ~ 302 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 81
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 65
+ Maximum memory usage : 15.012283325195312 mb
+ Total time ~ 17 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 255
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 255
+ Maximum memory usage : 15.332328796386719 mb
+ Total time ~ 23 ms
+===================================================
+database size :152
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 326
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 311
+ Maximum memory usage : 3.2318344116210938 mb
+ Total time ~ 11 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 268
+ The algorithm stopped at size 8, because there is no candidate
+ Frequent itemsets count : 257
+ Maximum memory usage : 3.5518341064453125 mb
+ Total time ~ 6 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 275
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 271
+ Maximum memory usage : 3.5518341064453125 mb
+ Total time ~ 4 ms
+===================================================
+database size :5
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 326
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 311
+ Maximum memory usage : 3.2320327758789062 mb
+ Total time ~ 48 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 268
+ The algorithm stopped at size 8, because there is no candidate
+ Frequent itemsets count : 257
+ Maximum memory usage : 3.5522384643554688 mb
+ Total time ~ 5 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 275
+ The algorithm stopped at size 9, because there is no candidate
+ Frequent itemsets count : 271
+ Maximum memory usage : 3.5522384643554688 mb
+ Total time ~ 7 ms
+===================================================
+database size :5
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 53
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 38
+ Maximum memory usage : 3.2084426879882812 mb
+ Total time ~ 66 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 41
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 32
+ Maximum memory usage : 3.2084426879882812 mb
+ Total time ~ 1 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 37
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 32
+ Maximum memory usage : 3.5284957885742188 mb
+ Total time ~ 1 ms
+===================================================
+database size :5
+min support :0.6
+=============  APRIORI - STATS =============
+ Candidates count : 6
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 4
+ Maximum memory usage : 3.2083206176757812 mb
+ Total time ~ 10 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 10
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 5
+ Maximum memory usage : 3.2083206176757812 mb
+ Total time ~ 1 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 5, because there is no candidate
+ Frequent itemsets count : 15
+ Maximum memory usage : 3.2083206176757812 mb
+ Total time ~ 2 ms
+===================================================
+database size :5
+=============  APRIORI - STATS =============
+ Candidates count : 222
+ The algorithm stopped at size 8, because there is no candidate
+ Frequent itemsets count : 196
+ Maximum memory usage : 3.2086563110351562 mb
+ Total time ~ 24 ms
+===================================================
+min support :0.6
+=============  APRIORI - STATS =============
+ Candidates count : 1
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 1
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 8 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 2 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 0 ms
+===================================================
+database size :5
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 7
+ Maximum memory usage : 2.8884658813476562 mb
+ Total time ~ 8 ms
+===================================================
+min support :0.6
+=============  APRIORI - STATS =============
+ Candidates count : 1
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 1
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 5 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 0 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 3
+ The algorithm stopped at size 2, because there is no candidate
+ Frequent itemsets count : 2
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 0 ms
+===================================================
+database size :5
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 16
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 10
+ Maximum memory usage : 3.216217041015625 mb
+ Total time ~ 6 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 7
+ Maximum memory usage : 3.216217041015625 mb
+ Total time ~ 0 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 16
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 11
+ Maximum memory usage : 3.216217041015625 mb
+ Total time ~ 0 ms
+===================================================
+database size :5
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 16
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 10
+ Maximum memory usage : 3.2163925170898438 mb
+ Total time ~ 213 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 7
+ Maximum memory usage : 3.2163925170898438 mb
+ Total time ~ 1 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 16
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 11
+ Maximum memory usage : 3.2163925170898438 mb
+ Total time ~ 5 ms
+===================================================
+database size :5
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 16
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 10
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 9 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 7
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 1 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 16
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 11
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 1 ms
+===================================================
+database size :5
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 16
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 10
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 39 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 15
+ The algorithm stopped at size 3, because there is no candidate
+ Frequent itemsets count : 7
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 0 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 16
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 11
+ Maximum memory usage : 3.2162551879882812 mb
+ Total time ~ 1 ms
+===================================================
+database size :5
+min support :0.4
+=============  APRIORI - STATS =============
+ Candidates count : 30
+ The algorithm stopped at size 4, because there is no candidate
+ Frequent itemsets count : 17
+ Maximum memory usage : 10.96844482421875 mb
+ Total time ~ 18 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 96
+ The algorithm stopped at size 6, because there is no candidate
+ Frequent itemsets count : 80
+ Maximum memory usage : 11.284156799316406 mb
+ Total time ~ 22 ms
+===================================================
+=============  APRIORI - STATS =============
+ Candidates count : 352
+ The algorithm stopped at size 8, because there is no candidate
+ Frequent itemsets count : 339
+ Maximum memory usage : 11.6004638671875 mb
+ Total time ~ 40 ms
+===================================================
+database size :291
+=============  APRIORI - STATS =============
+ Candidates count : 23227
+ The algorithm stopped at size 12, because there is no candidate
+ Frequent itemsets count : 22657
+ Maximum memory usage : 14.747138977050781 mb
+ Total time ~ 1647 ms
+===================================================

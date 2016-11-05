@@ -1,0 +1,51 @@
+package com.shivumytri.main;
+
+
+import java.io.File;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import ca.pfv.spmf.algorithms.frequentpatterns.apriori.AlgoApriori;
+
+/**
+ * Example of how to use APRIORI algorithm from the source code.
+ * @author Philippe Fournier-Viger (Copyright 2008)
+ */
+public class MainTestApriori_saveToFile {
+
+	public static void main(String [] arg) throws IOException{
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Apriori Started...");		
+
+		System.out.println("Enter file name");
+		String filename =  sc.next();
+		
+		String input = ".\\discretizeddata\\" + filename;
+		String output = ".\\finaloutput\\"+ filename +"_out";  // the path for saving the frequent itemsets found
+		
+		System.out.println("Enter min support 0.0 to 0.99 range ");
+
+		double minsup =sc.nextDouble();
+
+		System.out.println("min support :" + minsup);
+
+		
+		// Applying the Apriori algorithm
+		AlgoApriori apriori = new AlgoApriori();		
+		apriori.runAlgorithm(minsup, input, output);		
+		apriori.printStats();
+		
+		System.out.println("Successfully completed..");
+
+	}
+	
+	public static String fileToPath(String filename) throws UnsupportedEncodingException{
+		URL url = MainTestApriori_saveToFile.class.getResource(filename);
+		 return java.net.URLDecoder.decode(url.getPath(),"UTF-8");
+	}
+}

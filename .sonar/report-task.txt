@@ -1,0 +1,5 @@
+projectKey=FinalAA
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/FinalAA
+ceTaskId=AVNpV9G2tSGmhGANPyqh
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVNpV9G2tSGmhGANPyqh
