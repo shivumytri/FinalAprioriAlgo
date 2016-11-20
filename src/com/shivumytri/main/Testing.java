@@ -17,6 +17,8 @@ public class Testing {
 		double d =  str.length()/2.0;
 		int mid=   (int) Math.ceil(d);
 		
+		System.out.println(test);
+		
 		System.out.println(d);
 		System.out.println(mid);
 
