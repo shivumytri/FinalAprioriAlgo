@@ -17,3 +17,37 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+target/classes/META-INF/MANIFEST.MF
+target/classes/META-INF/maven/com.bms.patternmining/AprioriWithPartition/pom.properties
+target/classes/META-INF/maven/com.bms.patternmining/AprioriWithPartition/pom.xml
+target/classes/log4j.properties
+target/test-classes/discretizeddata/.txt
+target/test-classes/discretizeddata/AITData
+target/test-classes/discretizeddata/BMSCEdata
+target/test-classes/discretizeddata/Gayatridata
+target/test-classes/discretizeddata/KLSGITdata
+target/test-classes/discretizeddata/NIEdata
+target/test-classes/discretizeddata/NMITdata
+target/test-classes/discretizeddata/RVCEdata
+target/test-classes/discretizeddata/SITdata
+target/test-classes/discretizeddata/SJCEdata
+target/test-classes/discretizeddata/TKMdata
+target/test-classes/finaloutput/BMSCEdata_out
+target/test-classes/finaloutput/partition_AITData0
+target/test-classes/finaloutput/partition_AITData0out_finalouput
+target/test-classes/finaloutput/partition_AITData1
+target/test-classes/finaloutput/partition_AITData2
+target/test-classes/finaloutput/partition_BMSCEdata0
+target/test-classes/finaloutput/partition_BMSCEdata0out_finalouput
+target/test-classes/finaloutput/partition_BMSCEdata1
+target/test-classes/finaloutput/partition_BMSCEdata2
+target/test-classes/intermediatarydata/AITData.txt
+target/test-classes/intermediatarydata/BMSCEdata.txt
+target/test-classes/intermediatarydata/Gayatridata.txt
+target/test-classes/intermediatarydata/KLSGITdata.txt
+target/test-classes/intermediatarydata/NIEdata.txt
+target/test-classes/intermediatarydata/NMITdata.txt
+target/test-classes/intermediatarydata/RVCEdata.txt
+target/test-classes/intermediatarydata/SITdata.txt
+target/test-classes/intermediatarydata/SJCEdata.txt
+target/test-classes/intermediatarydata/TKMdata.txt
