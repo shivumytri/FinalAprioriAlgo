@@ -30,7 +30,7 @@ import java.util.Map.Entry;
 
 import org.apache.log4j.Logger;
 
-import com.shivumytri.partition.CreatePartition;
+import com.bms.pm.apriwithpart.partition.CreatePartition;
 
 import ca.pfv.spmf.algorithms.ArraysAlgos;
 import ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemset;

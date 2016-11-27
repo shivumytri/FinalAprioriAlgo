@@ -1,8 +1,8 @@
-package com.shivumytri.main;
+package com.bms.pm.apriwithpart.main;
 
 
 
-import com.shivumytri.partition.CreatePartition;
+import com.bms.pm.apriwithpart.partition.CreatePartition;
 
 
 

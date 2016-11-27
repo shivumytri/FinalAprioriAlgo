@@ -1,4 +1,4 @@
-package com.shivumytri.partition;
+package com.bms.pm.apriwithpart.partition;
 
 import java.util.Comparator;
 

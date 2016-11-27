@@ -1,8 +1,8 @@
-package com.shivumytri.main;
+package com.bms.pm.apriwithpart.main;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.shivumytri.datadiscretizaton.NCR;
+import com.bms.pm.apriwithpart.datadiscretizaton.NCR;
 
 public class Testing {
 

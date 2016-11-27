@@ -1,4 +1,4 @@
-package com.shivumytri.partition;
+package com.bms.pm.apriwithpart.partition;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -16,7 +16,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 import org.apache.log4j.Logger;
 
-import com.shivumytri.datadiscretizaton.NCR;
+import com.bms.pm.apriwithpart.datadiscretizaton.NCR;
 
 import ca.pfv.spmf.algorithms.frequentpatterns.apriori.AlgoApriori;
 import ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemset;

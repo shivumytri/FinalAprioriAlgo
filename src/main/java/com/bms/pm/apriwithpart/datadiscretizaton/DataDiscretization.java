@@ -1,4 +1,4 @@
-package com.shivumytri.datadiscretizaton;
+package com.bms.pm.apriwithpart.datadiscretizaton;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
