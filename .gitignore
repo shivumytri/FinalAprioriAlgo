@@ -51,3 +51,4 @@ target/test-classes/intermediatarydata/RVCEdata.txt
 target/test-classes/intermediatarydata/SITdata.txt
 target/test-classes/intermediatarydata/SJCEdata.txt
 target/test-classes/intermediatarydata/TKMdata.txt
+/target/
