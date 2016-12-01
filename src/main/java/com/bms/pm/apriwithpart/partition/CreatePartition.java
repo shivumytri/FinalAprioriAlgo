@@ -50,7 +50,7 @@ public class CreatePartition {
 			partitiondetails[2] = 9;// sc.nextInt();
 			// }
 
-			String fullname = ".\\discretizeddata\\" + filename;
+			String fullname = ".\\src\\test\\resources\\discretizeddata\\" + filename;
 
 			File f = new File(fullname);
 			FileReader fr = new FileReader(f);
@@ -58,7 +58,7 @@ public class CreatePartition {
 
 			listoffile = new ArrayList<File>();
 			for (int i = 0; i < noofpartition; i++) {
-				File output = new File(".\\finaloutput\\partition_" + filename + i);
+				File output = new File(".\\src\\test\\resources\\finaloutput\\partition_" + filename + i);
 				if (output.exists()) {
 					if (output.delete()) {
 						System.out.println(output.getName() + " is deleted!");

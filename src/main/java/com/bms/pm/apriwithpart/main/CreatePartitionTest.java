@@ -1,10 +1,6 @@
 package com.bms.pm.apriwithpart.main;
 
-
-
 import com.bms.pm.apriwithpart.partition.CreatePartition;
-
-
 
 public class CreatePartitionTest {
 
