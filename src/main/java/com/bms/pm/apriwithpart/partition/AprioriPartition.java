@@ -2,15 +2,15 @@ package com.bms.pm.apriwithpart.partition;
 
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+
+import com.ecyrd.speed4j.StopWatch;
 
 import ca.pfv.spmf.algorithms.frequentpatterns.apriori.AlgoApriori;
 import ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemset;
@@ -21,43 +21,50 @@ public class AprioriPartition {
 	final static Logger logger = Logger.getLogger(AprioriPartition.class);
 
 	AprioriPartitonUtils apUtils = new AprioriPartitonUtils();
+	
+	StopWatch sw = new StopWatch();
 
-	public List<Itemsets> callAprioriAlgorith(ArrayList<File> listoffile, double minsup, int noofpartition, String path,
-			String filname) {
+	public List<Itemsets> callAprioriAlgorith(ArrayList<File> listOfFileObj, double minSup, int noOfPartition,
+			String filePath, boolean storeIntermediatoryResultToFile) {
 
-		List<Itemsets> results = new ArrayList<Itemsets>();
+		List<Itemsets> lstOfItmSetForEachPartition = new ArrayList<Itemsets>();
 
-		for (int i = 0; i < listoffile.size(); i++) {
+		for (int i = 0; i < listOfFileObj.size(); i++) {
 
-			File inputfile = listoffile.get(i);
+			File partitionName = listOfFileObj.get(i);
 
-			String input = path + inputfile.getName();
+			String partitonInpRef = filePath + partitionName.getName();
 
-			// String output = ".\\src\\test\\resources\\finaloutput\\" +
-			// inputfile.getName() + "out";
+			String partitonOutRef = filePath + partitionName.getName() + "out";
 
 			try {
 				AlgoApriori apriori = new AlgoApriori();
-				// apriori.runAlgorithm(minsup, input, output);
-				Itemsets t = apriori.runAlgorithm(minsup, input, null);
-				apriori.printStats();
-				results.add(t);
+
+				if (storeIntermediatoryResultToFile) {
+					apriori.runAlgorithm(minSup, partitonInpRef, partitonOutRef);
+				}
+						
+				Itemsets itemsets =null;
+				
+				sw.start();
+				itemsets = apriori.runAlgorithm(minSup, partitonInpRef, null);
+				sw.start();
+				logger.debug(" Total time ~ " + sw.getElapsedTime() + " ns");
+				//logger.debug(" Total time ~ " + sw.getTimeNanos()/1000 + " ms");
+				//apriori.printStats();
+
+				lstOfItmSetForEachPartition.add(itemsets);
 
 			} catch (IOException e) {
 				logger.error(" Exception while reading file. " + e.getMessage());
 			}
 		}
-		return results;
+		return lstOfItmSetForEachPartition;
 	}
 
-	public void generateSecondFP(List<Itemsets> results, String outputfilename, List<int[]> dbdata, double minsupp,
-			int noofpartition) {
-		
-		List<Itemset> candidatesK = new ArrayList<>();
+	public List<Itemset> generatingCandidateItemSets(List<Itemsets> results, int noofpartition) {
 
-		logger.debug(results.get(0).getLevels());
-		logger.debug(results.get(1).getLevels());
-		logger.debug(results.get(2).getLevels());
+		List<Itemset> candidatesK = new ArrayList<>();
 
 		List<String> allcombinations = apUtils.getallCombinations(noofpartition);
 
@@ -149,27 +156,12 @@ public class AprioriPartition {
 			}
 
 		}
+		logger.debug("all the candidate itemsets are generated");
 
-		BufferedWriter writer = null;
-		try {
-			writer = new BufferedWriter(new FileWriter(outputfilename));
-			Collections.sort(candidatesK, new IndexZeroComparator());
-			Collections.sort(candidatesK, new SizeComparator());
-			getSupportCountofNewItems(candidatesK, dbdata, (int) Math.ceil(minsupp * dbdata.size()), writer);
-			writer.close();
-		} catch (IOException e) {
-			logger.debug(e);
-		} finally {
-			try {
-				writer.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-		logger.debug("Successfully completed");
+		return candidatesK;
 	}
 
-	private void getSupportCountofNewItems(List<Itemset> candidatesK, List<int[]> dbdata, int minsupRelative,
+	public void getSupportCountofNewItems(List<Itemset> candidatesK, List<int[]> dbdata, int minsupRelative,
 			BufferedWriter writer) {
 
 		for (int[] transaction : dbdata) {

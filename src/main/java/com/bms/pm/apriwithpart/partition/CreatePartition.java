@@ -80,7 +80,7 @@ public class CreatePartition {
 		return listOfFileObj;
 	}
 	
-	private ArrayList<String> getPartitionDataForEachFile(String line, int[] partitiondetails) throws Exception {
+	private ArrayList<String> getPartitionDataForEachFile(String line, int[] partitionDetails) throws Exception {
 
 		ArrayList<String> result = new ArrayList<String>();
 
@@ -88,20 +88,20 @@ public class CreatePartition {
 		int noofcolumns = dataLine.countTokens();
 		int totalparitionsize = 0;
 
-		for (int i = 0; i < partitiondetails.length; i++) {
-			totalparitionsize += partitiondetails[i];
+		for (int i = 0; i < partitionDetails.length; i++) {
+			totalparitionsize += partitionDetails[i];
 		}
 
 		if (totalparitionsize == noofcolumns) {
 
-			for (int j = 0; j < partitiondetails.length; j++) {
+			for (int j = 0; j < partitionDetails.length; j++) {
 
 				String test = "";
 				boolean last = false;
 
-				for (int i = 0; i < partitiondetails[j]; i++) {
+				for (int i = 0; i < partitionDetails[j]; i++) {
 
-					if (i == partitiondetails[j] - 1) {
+					if (i == partitionDetails[j] - 1) {
 						last = true;
 					}
 

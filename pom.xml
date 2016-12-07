@@ -26,6 +26,11 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
+		<dependency>
+			<groupId>com.ecyrd.speed4j</groupId>
+			<artifactId>speed4j</artifactId>
+			<version>0.12</version>
+		</dependency>
 	</dependencies>
 
 	<build>
