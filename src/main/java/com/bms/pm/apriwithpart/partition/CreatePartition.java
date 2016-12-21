@@ -26,60 +26,53 @@ public class CreatePartition {
 
 	final static Logger logger = Logger.getLogger(CreatePartition.class);
 
-	public ArrayList<File>  createPartition(String path, String fileName, int noOfPartition, int[] partitionDetails) {
-	
+	public ArrayList<File> createPartition(String path, String dataPath, String fileName, int noOfPartition,
+			int[] partitionDetails) throws FileNotFoundException, Exception {
+
 		ArrayList<File> listOfFileObj = null;
 
-		try {	
+		File sourceData = new File(dataPath + fileName);
+		FileReader fr = new FileReader(sourceData);
+		BufferedReader bf = new BufferedReader(fr);
 
-			File f = new File(path + fileName);
-			FileReader fr = new FileReader(f);
-			BufferedReader bf = new BufferedReader(fr);
-
-			listOfFileObj = new ArrayList<File>();
-			for (int i = 0; i < noOfPartition; i++) {
-				File output = new File(path +"partition_" + fileName + i);
-				if (output.exists()) {
-					if (output.delete()) {
-						logger.debug(output.getName() + " is deleted!");
-					} else {
-						logger.debug("Delete operation is failed.");
-					}
+		listOfFileObj = new ArrayList<File>();
+		for (int i = 0; i < noOfPartition; i++) {
+			File output = new File(path + "partition_" + fileName + i);
+			if (output.exists()) {
+				if (output.delete()) {
+					logger.debug(output.getName() + " is deleted!");
+				} else {
+					logger.debug("Delete operation is failed.");
 				}
-
-				listOfFileObj.add(output);
 			}
 
-			BufferedWriter bw = null;
-
-			String line = bf.readLine();
-
-			while (line != null) {
-
-				ArrayList<String> data = getPartitionDataForEachFile(line, partitionDetails);			
-
-				for (int i = 0; i < partitionDetails.length; i++) {
-					bw = new BufferedWriter(new FileWriter(listOfFileObj.get(i), true));
-					bw.write(data.get(i));
-					bw.write("\n");
-					bw.close();
-				}
-
-				line = bf.readLine();
-			}
-
-			bf.close();
-			logger.debug("Partition Created Successfully.");			
-
-		} catch (FileNotFoundException e) {
-			logger.error("File not found. Please scan in new file.");
-		} catch (Exception e) {
-			logger.error("" + e.getMessage());
+			listOfFileObj.add(output);
 		}
-		
+
+		BufferedWriter bw = null;
+
+		String line = bf.readLine();
+
+		while (line != null) {
+
+			ArrayList<String> data = getPartitionDataForEachFile(line, partitionDetails);
+
+			for (int i = 0; i < partitionDetails.length; i++) {
+				bw = new BufferedWriter(new FileWriter(listOfFileObj.get(i), true));
+				bw.write(data.get(i));
+				bw.write("\n");
+				bw.close();
+			}
+
+			line = bf.readLine();
+		}
+
+		bf.close();
+		logger.debug("Partition Created Successfully.");
+
 		return listOfFileObj;
 	}
-	
+
 	private ArrayList<String> getPartitionDataForEachFile(String line, int[] partitionDetails) throws Exception {
 
 		ArrayList<String> result = new ArrayList<String>();
@@ -121,7 +114,5 @@ public class CreatePartition {
 		return result;
 
 	}
-
-	
 
 }

@@ -22,10 +22,10 @@ public class AprioriPartition {
 
 	AprioriPartitonUtils apUtils = new AprioriPartitonUtils();
 	
-	StopWatch sw = new StopWatch();
+	private int itemsetCount = 0;
 
 	public List<Itemsets> callAprioriAlgorith(ArrayList<File> listOfFileObj, double minSup, int noOfPartition,
-			String filePath, boolean storeIntermediatoryResultToFile) {
+			String filePath, boolean storeIntermediatoryResultToFile) throws IOException  {
 
 		List<Itemsets> lstOfItmSetForEachPartition = new ArrayList<Itemsets>();
 
@@ -37,27 +37,20 @@ public class AprioriPartition {
 
 			String partitonOutRef = filePath + partitionName.getName() + "out";
 
-			try {
+		
 				AlgoApriori apriori = new AlgoApriori();
 
 				if (storeIntermediatoryResultToFile) {
 					apriori.runAlgorithm(minSup, partitonInpRef, partitonOutRef);
 				}
 						
-				Itemsets itemsets =null;
-				
-				sw.start();
-				itemsets = apriori.runAlgorithm(minSup, partitonInpRef, null);
-				sw.start();
-				logger.debug(" Total time ~ " + sw.getElapsedTime() + " ns");
-				//logger.debug(" Total time ~ " + sw.getTimeNanos()/1000 + " ms");
-				//apriori.printStats();
+				Itemsets itemsets =null;			
+				itemsets = apriori.runAlgorithm(minSup, partitonInpRef, null);		
+			
+				apriori.printStats();
 
 				lstOfItmSetForEachPartition.add(itemsets);
 
-			} catch (IOException e) {
-				logger.error(" Exception while reading file. " + e.getMessage());
-			}
 		}
 		return lstOfItmSetForEachPartition;
 	}
@@ -97,8 +90,8 @@ public class AprioriPartition {
 					Itemsets itemset0 = results.get(Integer.parseInt("" + str.charAt(0)));
 					Itemsets itemset1 = results.get(Integer.parseInt("" + str.charAt(1)));
 
-					itemset0.printItemsets(0);
-					itemset1.printItemsets(0);
+					//itemset0.printItemsets(0);
+					//itemset1.printItemsets(0);
 
 					List<Itemset> nextLevelComb = new ArrayList<>();
 
@@ -155,13 +148,12 @@ public class AprioriPartition {
 				candidatesK.addAll(listOfNextLevelComb.get(str));
 			}
 
-		}
-		logger.debug("all the candidate itemsets are generated");
+		}	
 
 		return candidatesK;
 	}
 
-	public void getSupportCountofNewItems(List<Itemset> candidatesK, List<int[]> dbdata, int minsupRelative,
+	public int getSupportCountofNewItems(List<Itemset> candidatesK, List<int[]> dbdata, int minsupRelative,
 			BufferedWriter writer) {
 
 		for (int[] transaction : dbdata) {
@@ -203,6 +195,7 @@ public class AprioriPartition {
 			// if the support is > minsup
 			if (candidate.getAbsoluteSupport() >= minsupRelative) {
 				// logger.debug(candidate.toString());
+				itemsetCount++;
 				try {
 					apUtils.saveItemsetToFile(candidate, writer);
 				} catch (IOException e) {
@@ -210,7 +203,7 @@ public class AprioriPartition {
 				}
 			}
 		}
-
+       return itemsetCount;
 	}
 
 }

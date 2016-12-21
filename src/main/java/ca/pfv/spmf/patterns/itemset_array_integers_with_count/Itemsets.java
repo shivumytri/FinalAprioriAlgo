@@ -21,6 +21,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
+import com.bms.pm.apriwithpart.main.AprioriPartitionTest;
+
 /**
  * This class represents a set of itemsets, where an itemset is an array of integers 
  * with an associated support count. Itemsets are ordered by size. For
@@ -29,6 +33,8 @@ import java.util.List;
  * @author Philippe Fournier-Viger
  */
 public class Itemsets{
+	
+	final static Logger logger = Logger.getLogger(Itemsets.class);
 	/** We store the itemsets in a list named "levels".
 	 Position i in "levels" contains the list of itemsets of size i */
 	private final ArrayList<ArrayList<Itemset>> levels = new ArrayList<ArrayList<Itemset>>(); 
@@ -52,7 +58,7 @@ public class Itemsets{
 	 */
 	public void printItemsets(int nbObject) {
 		
-		System.out.println(" ------- " + name + " -------");
+		logger.debug(" ------- " + name + " -------");
 		
 		int patternCount = 0;
 		int levelCount = 0;
@@ -60,7 +66,7 @@ public class Itemsets{
 		for (List<Itemset> level : levels) {			
 			
 			// print how many items are contained in this level
-			System.out.println("  L" + levelCount + " ");
+			logger.debug("  L" + levelCount + " ");
 			
 			// for each itemset
 			for (Itemset itemset : level) {
@@ -70,11 +76,11 @@ public class Itemsets{
 				// print the support of this itemset
 				System.out.print("support :  " + itemset.getAbsoluteSupport());
 				patternCount++;
-				System.out.println("");
+				logger.debug("");
 			}			
 			levelCount++;
 		}
-		System.out.println(" --------------------------------");
+		logger.debug(" --------------------------------");
 	}
 
 	/* (non-Javadoc)

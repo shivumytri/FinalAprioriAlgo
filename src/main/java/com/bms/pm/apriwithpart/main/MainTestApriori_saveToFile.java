@@ -25,8 +25,8 @@ public class MainTestApriori_saveToFile {
 		System.out.println("Enter file name");
 		String filename =  sc.next();
 		
-		String input = ".\\discretizeddata\\" + filename;
-		String output = ".\\finaloutput\\"+ filename +"_out";  // the path for saving the frequent itemsets found
+		String input = ".\\src\\test\\resources\\discretizeddata\\" + filename;
+		String output = ".\\src\\test\\resources\\finaloutput\\"+ filename +"_out";  // the path for saving the frequent itemsets found
 		
 		System.out.println("Enter min support 0.0 to 0.99 range ");
 

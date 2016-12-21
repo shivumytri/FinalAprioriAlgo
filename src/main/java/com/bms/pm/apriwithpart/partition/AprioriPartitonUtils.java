@@ -13,6 +13,7 @@ import org.apache.log4j.Logger;
 import com.bms.pm.apriwithpart.datadiscretizaton.NCR;
 
 import ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemset;
+import ca.pfv.spmf.tools.MemoryLogger;
 
 public class AprioriPartitonUtils {
 	
@@ -116,6 +117,16 @@ public class AprioriPartitonUtils {
 		}
 		logger.debug("database size :" + databaseSize);
 		return database;
+	}
+	public void printStats(int totalCandidateCount, long endTimestamp, long startTimestamp, int itemsetCount ) {
+		logger.debug("=============  APRIORI - STATS =============");
+		logger.debug(" Candidates count : " + totalCandidateCount);
+		//logger.debug(" The algorithm stopped at size " + (k - 1)
+		//		+ ", because there is no candidate");
+		logger.debug(" Frequent itemsets count : " + itemsetCount);
+	//	logger.debug(" Maximum memory usage : " + MemoryLogger.getInstance().getMaxMemory() + " mb");
+		logger.debug(" Total time ~ " + (endTimestamp - startTimestamp) + " ms");
+		logger.debug("===================================================");
 	}
 
 }
