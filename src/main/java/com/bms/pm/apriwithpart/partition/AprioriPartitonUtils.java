@@ -6,17 +6,22 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import org.apache.log4j.Logger;
 
 import com.bms.pm.apriwithpart.datadiscretizaton.NCR;
 
+import ca.pfv.spmf.algorithms.ArraysAlgos;
 import ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemset;
+import ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemsets;
 import ca.pfv.spmf.tools.MemoryLogger;
 
 public class AprioriPartitonUtils {
-	
+
 	final static Logger logger = Logger.getLogger(AprioriPartitonUtils.class);
 
 	public List<String> getallCombinations(int noofpartition) {
@@ -41,7 +46,7 @@ public class AprioriPartitonUtils {
 		}
 		return allcombinations;
 	}
-	
+
 	void saveItemsetToFile(Itemset itemset, BufferedWriter writer) throws IOException {
 
 		// if the result should be saved to a file
@@ -50,7 +55,7 @@ public class AprioriPartitonUtils {
 			writer.newLine();
 		}
 	}
-	
+
 	public List<Itemset> calltocreateCombination(Itemset one, List<ArrayList<Itemset>> temp) {
 
 		List<Itemset> test3 = new ArrayList<Itemset>();
@@ -69,7 +74,7 @@ public class AprioriPartitonUtils {
 		return test3;
 
 	}
-	
+
 	public List<int[]> readDataFromFile(String inputfile) {
 
 		List<int[]> database = null;
@@ -118,15 +123,181 @@ public class AprioriPartitonUtils {
 		logger.debug("database size :" + databaseSize);
 		return database;
 	}
-	public void printStats(int totalCandidateCount, long endTimestamp, long startTimestamp, int itemsetCount ) {
+
+	public void printStats(int totalCandidateCount, long endTimestamp, long startTimestamp, int itemsetCount) {
 		logger.debug("=============  APRIORI - STATS =============");
 		logger.debug(" Candidates count : " + totalCandidateCount);
-		//logger.debug(" The algorithm stopped at size " + (k - 1)
-		//		+ ", because there is no candidate");
+		// logger.debug(" The algorithm stopped at size " + (k - 1)
+		// + ", because there is no candidate");
 		logger.debug(" Frequent itemsets count : " + itemsetCount);
-	//	logger.debug(" Maximum memory usage : " + MemoryLogger.getInstance().getMaxMemory() + " mb");
+		// logger.debug(" Maximum memory usage : " +
+		// MemoryLogger.getInstance().getMaxMemory() + " mb");
 		logger.debug(" Total time ~ " + (endTimestamp - startTimestamp) + " ms");
 		logger.debug("===================================================");
+	}
+
+	public ArrayList<Integer> getSingleItemSetOfPartition(List<Itemsets> results,int level) {
+
+		ArrayList<Integer> frequentSingleItemset = new ArrayList<Integer>();
+
+		for (Itemsets itemsets : results ) {
+
+			//int whichPartition = Integer.parseInt("" + partitionData.charAt(i));
+
+			ArrayList<Itemset> test = itemsets.getLevels().get(level);
+
+			for (Itemset singleItem : test) {
+				frequentSingleItemset.add(singleItem.get(0));
+			}
+		}
+
+		Collections.sort(frequentSingleItemset, new Comparator<Integer>() {
+			public int compare(Integer o1, Integer o2) {
+				return o1 - o2;
+			}
+		});
+
+		return frequentSingleItemset;
+	}
+
+	/**
+	 * This method generates candidates itemsets of size 2 based on itemsets of
+	 * size 1.
+	 * 
+	 * @param frequent1
+	 *            the list of frequent itemsets of size 1.
+	 * @return a List of Itemset that are the candidates of size 2.
+	 */
+	public List<Itemset> generateCandidate2(List<Integer> frequent1, List<Itemsets> results,int level) {
+		List<Itemset> candidates = new ArrayList<Itemset>();
+
+		// For each itemset I1 and I2 of level k-1
+		for (int i = 0; i < frequent1.size(); i++) {
+			Integer item1 = frequent1.get(i);
+			for (int j = i + 1; j < frequent1.size(); j++) {
+				Integer item2 = frequent1.get(j);
+
+				// Create a new candidate by combining itemset1 and itemset2
+				Itemset newItemset = new Itemset(new int[] { item1, item2 });
+				// to test if this itemset is frequent or not
+				int isExsitCount = isFrequentInPartitionResult(results, newItemset, level);
+				if (isExsitCount == 0) {
+					candidates.add(newItemset);
+				}
+			}
+		}
+		return candidates;
+	}
+
+	private int isFrequentInPartitionResult(List<Itemsets> results, Itemset newItemset, int i) {
+		int result = 0;
+		for (Itemsets itemSet : results) {
+			ArrayList<Itemset> itemsetInLevel = itemSet.getLevels().get(i);
+			for (Itemset itemset : itemsetInLevel) {
+				if (Arrays.equals(itemset.getItems(), (newItemset.getItems())))
+					result += 1;
+			}
+		}
+		;
+
+		return result;
+	}
+	
+	/**
+	 * Method to generate itemsets of size k from frequent itemsets of size K-1.
+	 * @param levelK_1  frequent itemsets of size k-1
+	 * @return itemsets of size k
+	 */
+	public List<Itemset> generateCandidateSizeK(List<Itemset> levelK_1) {
+		// create a variable to store candidates
+		List<Itemset> candidates = new ArrayList<Itemset>();
+
+		// For each itemset I1 and I2 of level k-1
+		loop1: for (int i = 0; i < levelK_1.size(); i++) {
+			int[] itemset1 = levelK_1.get(i).itemset;
+			loop2: for (int j = i + 1; j < levelK_1.size(); j++) {
+				int[] itemset2 = levelK_1.get(j).itemset;
+
+				// we compare items of itemset1 and itemset2.
+				// If they have all the same k-1 items and the last item of
+				// itemset1 is smaller than
+				// the last item of itemset2, we will combine them to generate a
+				// candidate
+				for (int k = 0; k < itemset1.length; k++) {
+					// if they are the last items
+					if (k == itemset1.length - 1) {
+						// the one from itemset1 should be smaller (lexical
+						// order)
+						// and different from the one of itemset2
+						if (itemset1[k] >= itemset2[k]) {
+							continue loop1;
+						}
+					}
+					// if they are not the last items, and
+					else if (itemset1[k] < itemset2[k]) {
+						continue loop2; // we continue searching
+					} else if (itemset1[k] > itemset2[k]) {
+						continue loop1; // we stop searching: because of lexical
+										// order
+					}
+				}
+
+				// Create a new candidate by combining itemset1 and itemset2
+				int newItemset[] = new int[itemset1.length+1];
+				System.arraycopy(itemset1, 0, newItemset, 0, itemset1.length);
+				newItemset[itemset1.length] = itemset2[itemset2.length -1];
+
+				// The candidate is tested to see if its subsets of size k-1 are
+				// included in
+				// level k-1 (they are frequent).
+				if (allSubsetsOfSizeK_1AreFrequent(newItemset, levelK_1)) {
+					candidates.add(new Itemset(newItemset));
+				}
+			}
+		}
+		return candidates; // return the set of candidates
+	}
+	
+	/**
+	 * Method to check if all the subsets of size k-1 of a candidate of size k are freuqnet
+	 * @param candidate a candidate itemset of size k
+	 * @param levelK_1  the frequent itemsets of size k-1
+	 * @return true if all the subsets are frequet
+	 */
+	private boolean allSubsetsOfSizeK_1AreFrequent(int[] candidate, List<Itemset> levelK_1) {
+		// generate all subsets by always each item from the candidate, one by one
+		for(int posRemoved=0; posRemoved< candidate.length; posRemoved++){
+
+			// perform a binary search to check if  the subset appears in  level k-1.
+	        int first = 0;
+	        int last = levelK_1.size() - 1;
+	       
+	        // variable to remember if we found the subset
+	        boolean found = false;
+	        // the binary search
+	        while( first <= last )
+	        {
+	        	int middle = ( first + last ) >>1 ; // >>1 means to divide by 2
+
+	        	int comparison = ArraysAlgos.sameAs(levelK_1.get(middle).getItems(), candidate, posRemoved);
+	            if(comparison < 0 ){
+	            	first = middle + 1;  //  the itemset compared is larger than the subset according to the lexical order
+	            }
+	            else if(comparison  > 0 ){
+	            	last = middle - 1; //  the itemset compared is smaller than the subset  is smaller according to the lexical order
+	            }
+	            else{
+	            	found = true; //  we have found it so we stop
+	                break;
+	            }
+	        }
+
+			if(found == false){  // if we did not find it, that means that candidate is not a frequent itemset because
+				// at least one of its subsets does not appear in level k-1.
+				return false;
+			}
+		}
+		return true;
 	}
 
 }

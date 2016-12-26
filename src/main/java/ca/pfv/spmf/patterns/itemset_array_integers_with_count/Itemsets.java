@@ -56,9 +56,9 @@ public class Itemsets{
 	/* (non-Javadoc)
 	 * @see ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#printItemsets(int)
 	 */
-	public void printItemsets(int nbObject) {
+	public void printItemsets() {
 		
-		logger.debug(" ------- " + name + " -------");
+		System.out.println(" ------- " + name + " -------");
 		
 		int patternCount = 0;
 		int levelCount = 0;
@@ -66,7 +66,7 @@ public class Itemsets{
 		for (List<Itemset> level : levels) {			
 			
 			// print how many items are contained in this level
-			logger.debug("  L" + levelCount + " ");
+			System.out.println("  L" + levelCount + " ");
 			
 			// for each itemset
 			for (Itemset itemset : level) {
@@ -76,11 +76,11 @@ public class Itemsets{
 				// print the support of this itemset
 				System.out.print("support :  " + itemset.getAbsoluteSupport());
 				patternCount++;
-				logger.debug("");
+				System.out.println("");
 			}			
 			levelCount++;
 		}
-		logger.debug(" --------------------------------");
+		System.out.println(" --------------------------------");
 	}
 
 	/* (non-Javadoc)

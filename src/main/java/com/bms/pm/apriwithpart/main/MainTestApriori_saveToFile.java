@@ -33,7 +33,6 @@ public class MainTestApriori_saveToFile {
 		double minsup =sc.nextDouble();
 
 		System.out.println("min support :" + minsup);
-
 		
 		// Applying the Apriori algorithm
 		AlgoApriori apriori = new AlgoApriori();		

@@ -21,11 +21,15 @@ public class AprioriPartition {
 	final static Logger logger = Logger.getLogger(AprioriPartition.class);
 
 	AprioriPartitonUtils apUtils = new AprioriPartitonUtils();
-	
-	private int itemsetCount = 0;
+
+	private int totalCandidateCount = 0; // number of candidate generated
+											// during last execution
+	protected long startTimestamp; // start time of last execution
+	protected long endTimestamp; // end time of last execution
+	private int itemsetCount; // itemset found during last execution
 
 	public List<Itemsets> callAprioriAlgorith(ArrayList<File> listOfFileObj, double minSup, int noOfPartition,
-			String filePath, boolean storeIntermediatoryResultToFile) throws IOException  {
+			String filePath, boolean storeIntermediatoryResultToFile) throws IOException {
 
 		List<Itemsets> lstOfItmSetForEachPartition = new ArrayList<Itemsets>();
 
@@ -37,173 +41,146 @@ public class AprioriPartition {
 
 			String partitonOutRef = filePath + partitionName.getName() + "out";
 
-		
-				AlgoApriori apriori = new AlgoApriori();
+			AlgoApriori apriori = new AlgoApriori();
 
-				if (storeIntermediatoryResultToFile) {
-					apriori.runAlgorithm(minSup, partitonInpRef, partitonOutRef);
-				}
-						
-				Itemsets itemsets =null;			
-				itemsets = apriori.runAlgorithm(minSup, partitonInpRef, null);		
-			
-				apriori.printStats();
+			if (storeIntermediatoryResultToFile) {
+				apriori.runAlgorithm(minSup, partitonInpRef, partitonOutRef);
+			}
 
-				lstOfItmSetForEachPartition.add(itemsets);
+			Itemsets itemsets = null;
+			itemsets = apriori.runAlgorithm(minSup, partitonInpRef, null);
+
+			itemsets.printItemsets();
+
+			apriori.printStats();
+
+			lstOfItmSetForEachPartition.add(itemsets);
 
 		}
 		return lstOfItmSetForEachPartition;
 	}
 
-	public List<Itemset> generatingCandidateItemSets(List<Itemsets> results, int noofpartition) {
+	public Itemsets checkSupportCount(List<Itemsets> results, List<int[]> dbdata, int minsupRelative) {
 
 		List<Itemset> candidatesK = new ArrayList<>();
 
-		List<String> allcombinations = apUtils.getallCombinations(noofpartition);
+		// get single item sets of the partition
+		ArrayList<Integer> frequentSingleItemset = apUtils.getSingleItemSetOfPartition(results, 1);
 
-		Map<String, List<Itemset>> listOfNextLevelComb = new HashMap<>();
+		totalCandidateCount += frequentSingleItemset.size();
 
-		for (int i = 0; i < results.size(); i++) {
+		candidatesK = apUtils.generateCandidate2(frequentSingleItemset, results, 2);
 
-			Itemsets x = results.get(i);
+		Itemsets patterns = new Itemsets("FREQUENT ITEMSETS");
 
-			List<Itemset> nextLevelComb = new ArrayList<>();
+		// add all itemsets of partition output
+		patterns = addAllItemsetOfPartition(results);
 
-			for (List<Itemset> test : x.getLevels()) {
-				for (Itemset o : test) {
-					o.setAbsoluteSupport(0);
-				}
-				nextLevelComb.addAll(test);
+		List<Itemset> level = null;
+
+		int k = 2;
+
+		do {
+
+			if (k != 2) {
+				level = combinePartitionDataWithCurrent(level, patterns, --k);
+				candidatesK = apUtils.generateCandidateSizeK(level);
 			}
 
-			listOfNextLevelComb.put("" + i, nextLevelComb);
-		}
+			// we add the number of candidates generated to the total
+			totalCandidateCount += candidatesK.size();
 
-		for (String str : allcombinations) {
-
-			// String str = "01";
-
-			if (str.length() % 2 == 0) {
-
-				if (str.length() / 2 == 1) {
-
-					Itemsets itemset0 = results.get(Integer.parseInt("" + str.charAt(0)));
-					Itemsets itemset1 = results.get(Integer.parseInt("" + str.charAt(1)));
-
-					//itemset0.printItemsets(0);
-					//itemset1.printItemsets(0);
-
-					List<Itemset> nextLevelComb = new ArrayList<>();
-
-					for (List<Itemset> test : itemset0.getLevels()) {
-						for (Itemset one : test) {
-							nextLevelComb.addAll(apUtils.calltocreateCombination(one, itemset1.getLevels()));
-						}
-					}
-					listOfNextLevelComb.put(str, nextLevelComb);
-				} else {
-
-					List<Itemset> firstComb = listOfNextLevelComb.get(str.substring(0, str.length() / 2));
-					List<Itemset> secComb = listOfNextLevelComb.get(str.substring((str.length() / 2), str.length()));
-
-					if (firstComb != null && secComb != null) {
-						List<ArrayList<Itemset>> temp = new ArrayList<ArrayList<Itemset>>();
-						temp.add((ArrayList<Itemset>) secComb);
-
-						List<Itemset> nextLevelComb = new ArrayList<>();
-
-						for (Itemset one : firstComb) {
-							nextLevelComb.addAll(apUtils.calltocreateCombination(one, temp));
-						}
-
-						listOfNextLevelComb.put(str, nextLevelComb);
-					}
-				}
-
-			} else {
-
-				double d = str.length() / 2.0;
-				int mid = (int) Math.ceil(d);
-
-				List<Itemset> firstComb = listOfNextLevelComb.get(str.substring(0, mid));
-				List<Itemset> secComb = listOfNextLevelComb.get(str.substring(mid, str.length()));
-
-				if (firstComb != null && secComb != null) {
-					List<ArrayList<Itemset>> temp = new ArrayList<ArrayList<Itemset>>();
-					temp.add((ArrayList<Itemset>) secComb);
-
-					List<Itemset> nextLevelComb = new ArrayList<>();
-
-					for (Itemset one : firstComb) {
-						nextLevelComb.addAll(apUtils.calltocreateCombination(one, temp));
-					}
-
-					listOfNextLevelComb.put(str, nextLevelComb);
-				}
-			}
-		}
-
-		for (String str : listOfNextLevelComb.keySet()) {
-			if (listOfNextLevelComb.get(str) != null) {
-				candidatesK.addAll(listOfNextLevelComb.get(str));
-			}
-
-		}	
-
-		return candidatesK;
-	}
-
-	public int getSupportCountofNewItems(List<Itemset> candidatesK, List<int[]> dbdata, int minsupRelative,
-			BufferedWriter writer) {
-
-		for (int[] transaction : dbdata) {
-
-			// for each candidate:
-			loopCand: for (Itemset candidate : candidatesK) {
-
-				// logger.debug(candidate);
-				// a variable that will be use to check if
-				// all items of candidate are in this transaction
-				int pos = 0;
-				// for each item in this transaction
-				for (int item : transaction) {
-					// if the item correspond to the current item of candidate
-					if (item == candidate.itemset[pos]) {
-						// we will try to find the next item of candidate next
-						pos++;
-						// if we found all items of candidate in this
-						// transaction
-						if (pos == candidate.itemset.length) {
-							// we increase the support of this candidate
-							candidate.support++;
+			for (int[] transaction : dbdata) {
+				// for each candidate:
+				loopCand: for (Itemset candidate : candidatesK) {
+					// a variable that will be use to check if
+					// all items of candidate are in this transaction
+					int pos = 0;
+					// for each item in this transaction
+					for (int item : transaction) {
+						// if the item correspond to the current item of
+						// candidate
+						if (item == candidate.itemset[pos]) {
+							// we will try to find the next item of candidate
+							// next
+							pos++;
+							// if we found all items of candidate in this
+							// transaction
+							if (pos == candidate.itemset.length) {
+								// we increase the support of this candidate
+								candidate.support++;
+								continue loopCand;
+							}
+							// Because of lexical order, we don't need to
+							// continue scanning the transaction if the current
+							// item
+							// is larger than the one that we search in
+							// candidate.
+						} else if (item > candidate.itemset[pos]) {
+							// logger.info("skippng .......................");
 							continue loopCand;
 						}
-						// Because of lexical order, we don't need to
-						// continue scanning the transaction if the current item
-						// is larger than the one that we search in candidate.
-					} else if (item > candidate.itemset[pos]) {
-						// logger.debug("Skipping ......"+item +"::"+
-						// candidate.itemset[pos]);
-						continue loopCand;
+
 					}
+				}
+			}
+			// We build the level k+1 with all the candidates that have
+			// a support higher than the minsup threshold.
+			level = new ArrayList<Itemset>();
+			for (Itemset candidate : candidatesK) {
+				// if the support is > minsup
+				if (candidate.getAbsoluteSupport() >= minsupRelative) {
+					itemsetCount++;
+					// add the candidate
+					level.add(candidate);
+					// the itemset is frequent so save it into results
+					// saveItemset(candidate);
+					patterns.addItemset(candidate, candidate.size());
+				}
+			}
+			// we will generate larger itemsets next.
+			k++;
+		} while (level.isEmpty() == false);
 
+		return patterns;
+	}
+
+	private List<Itemset> combinePartitionDataWithCurrent(List<Itemset> level, Itemsets patterns, int previousLevel) {
+
+		List<Itemset> partitionItemsets = patterns.getLevels().get(previousLevel);
+		level.addAll(partitionItemsets);
+
+		return level;
+	}
+
+	private Itemsets addAllItemsetOfPartition(List<Itemsets> results) {
+
+		Itemsets allItemsets = new Itemsets("Final out put");
+
+		for (Itemsets test : results) {
+			for (int i = 0; i < test.getLevels().size(); i++) {
+				for (Itemset test3 : test.getLevels().get(i)) {
+					allItemsets.addItemset(test3, i);
 				}
 			}
 		}
+		return allItemsets;
+	}
+	
+	public int getTotalCandidateCount() {
+		return totalCandidateCount;
+	}
 
-		for (Itemset candidate : candidatesK) {
-			// if the support is > minsup
-			if (candidate.getAbsoluteSupport() >= minsupRelative) {
-				// logger.debug(candidate.toString());
-				itemsetCount++;
-				try {
-					apUtils.saveItemsetToFile(candidate, writer);
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-       return itemsetCount;
+	public void setTotalCandidateCount(int totalCandidateCount) {
+		this.totalCandidateCount = totalCandidateCount;
+	}
+
+	public int getItemsetCount() {
+		return itemsetCount;
+	}
+
+	public void setItemsetCount(int itemsetCount) {
+		this.itemsetCount = itemsetCount;
 	}
 
 }

@@ -41,7 +41,7 @@ public class AprioriPartitionTest {
 
 		logger.debug("Partitioning Started...");
 		logger.debug("Enter file name");
-		String fileName = "BMSCEdata"; // sc.next();
+		String fileName = "AITData"; // sc.next();
 		logger.debug(fileName);
 		logger.debug("Enter number of partition");
 		int noOfPartition = 3;// sc.nextInt();
@@ -51,9 +51,12 @@ public class AprioriPartitionTest {
 		// for (int i = 0; i < noofpartition; i++) {
 		// logger.debug("Enter number of columns, per partition_" +
 		// filename + (i + 1) );
-		partitionDetails[0] = 8;// sc.nextInt();
-		partitionDetails[1] = 8;// sc.nextInt();
-		partitionDetails[2] = 9;// sc.nextInt();
+		// partitionDetails[0] = 8;// sc.nextInt();
+		// partitionDetails[1] = 8;// sc.nextInt();
+		// partitionDetails[2] = 9;// sc.nextInt();
+		partitionDetails[0] = 3;// sc.nextInt();
+		partitionDetails[1] = 3;// sc.nextInt();
+		partitionDetails[2] = 3;// sc.nextInt();
 		// }
 
 		logger.debug("Enter min support 0.0 to 0.99 range ");
@@ -75,37 +78,30 @@ public class AprioriPartitionTest {
 
 		List<Itemsets> lstOfItmSetForEachPartition = null;
 		try {
-			lstOfItmSetForEachPartition = ApPartAlgo.callAprioriAlgorith(listOfFileObj, minSup,
-					noOfPartition, filePath, false);
+			lstOfItmSetForEachPartition = ApPartAlgo.callAprioriAlgorith(listOfFileObj, minSup, noOfPartition, filePath,
+					false);
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 
-		// gives candidates set of after combination of each partition
-		List<Itemset> candidatesK = ApPartAlgo.generatingCandidateItemSets(lstOfItmSetForEachPartition, noOfPartition);
+		List<int[]> dbdata = apUtils.readDataFromFile(".\\src\\test\\resources\\discretizeddata\\" + fileName);
+
+		Itemsets patterns = new Itemsets("FREQUENT ITEMSETS");
+
+		patterns = ApPartAlgo.checkSupportCount(lstOfItmSetForEachPartition, dbdata,
+				(int) Math.ceil(minSup * dbdata.size()));
+
+		patterns.printItemsets();
+
+		endTimestamp = System.currentTimeMillis();
+		
+		apUtils.printStats(ApPartAlgo.getTotalCandidateCount(), endTimestamp, startTimestamp, ApPartAlgo.getItemsetCount());
 
 		// file name to store final out.
 		String finaloutput = filePath + listOfFileObj.get(0).getName() + "out_finalouput";
 
-		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter(finaloutput));
-
-			Collections.sort(candidatesK, new IndexZeroComparator());
-			Collections.sort(candidatesK, new SizeComparator());
-
-			List<int[]> dbdata = apUtils.readDataFromFile(".\\src\\test\\resources\\discretizeddata\\" + fileName);
-
-			itemsetCount = ApPartAlgo.getSupportCountofNewItems(candidatesK, dbdata, (int) Math.ceil(minSup * dbdata.size()), writer);
-
-			writer.close();
-		} catch (IOException e) {
-			logger.error(e);
-		}
 		
-		endTimestamp = System.currentTimeMillis();
-		apUtils.printStats(candidatesK.size(), endTimestamp, startTimestamp, itemsetCount);
-	
+
 	}
 
 }

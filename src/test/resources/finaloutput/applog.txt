@@ -1,0 +1,1192 @@
+2016-12-22 20:49:46 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-22 20:49:46 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-22 20:49:46 DEBUG AprioriPartitionTest:45 - BMSCEdata
+2016-12-22 20:49:46 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-22 20:49:46 DEBUG AprioriPartitionTest:48 - 3
+2016-12-22 20:49:46 DEBUG AprioriPartitionTest:59 - Enter min support 0.0 to 0.99 range 
+2016-12-22 20:49:46 DEBUG AprioriPartitionTest:61 - min support :0.4
+2016-12-22 20:49:46 DEBUG CreatePartition:43 - partition_BMSCEdata0 is deleted!
+2016-12-22 20:49:46 DEBUG CreatePartition:43 - partition_BMSCEdata1 is deleted!
+2016-12-22 20:49:46 DEBUG CreatePartition:43 - partition_BMSCEdata2 is deleted!
+2016-12-22 20:50:12 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-22 20:50:12 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 20:50:12 DEBUG AlgoApriori:470 -  Candidates count : 30
+2016-12-22 20:50:12 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 20:50:12 DEBUG AlgoApriori:473 -  Frequent itemsets count : 17
+2016-12-22 20:50:12 DEBUG AlgoApriori:474 -  Maximum memory usage : 12.046867370605469 mb
+2016-12-22 20:50:12 DEBUG AlgoApriori:475 -  Total time ~ 24 ms
+2016-12-22 20:50:12 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 20:50:12 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 20:50:12 DEBUG AlgoApriori:470 -  Candidates count : 96
+2016-12-22 20:50:12 DEBUG AlgoApriori:471 -  The algorithm stopped at size 6, because there is no candidate
+2016-12-22 20:50:12 DEBUG AlgoApriori:473 -  Frequent itemsets count : 80
+2016-12-22 20:50:12 DEBUG AlgoApriori:474 -  Maximum memory usage : 12.366561889648438 mb
+2016-12-22 20:50:12 DEBUG AlgoApriori:475 -  Total time ~ 35 ms
+2016-12-22 20:50:12 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 20:50:12 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 20:50:12 DEBUG AlgoApriori:470 -  Candidates count : 352
+2016-12-22 20:50:12 DEBUG AlgoApriori:471 -  The algorithm stopped at size 8, because there is no candidate
+2016-12-22 20:50:12 DEBUG AlgoApriori:473 -  Frequent itemsets count : 339
+2016-12-22 20:50:12 DEBUG AlgoApriori:474 -  Maximum memory usage : 12.686195373535156 mb
+2016-12-22 20:50:12 DEBUG AlgoApriori:475 -  Total time ~ 45 ms
+2016-12-22 20:50:12 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 20:50:12 DEBUG AprioriPartitonUtils:118 - database size :291
+2016-12-22 20:50:24 DEBUG AprioriPartitonUtils:122 - =============  APRIORI - STATS =============
+2016-12-22 20:50:24 DEBUG AprioriPartitonUtils:123 -  Candidates count : 495719
+2016-12-22 20:50:24 DEBUG AprioriPartitonUtils:126 -  Frequent itemsets count : 22657
+2016-12-22 20:50:24 DEBUG AprioriPartitonUtils:128 -  Total time ~ 12399 ms
+2016-12-22 20:50:24 DEBUG AprioriPartitonUtils:129 - ===================================================
+2016-12-22 21:30:27 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-22 21:30:27 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-22 21:30:27 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-22 21:30:27 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-22 21:30:27 DEBUG AprioriPartitionTest:48 - 3
+2016-12-22 21:30:27 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-22 21:30:27 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-22 21:30:27 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-22 21:30:27 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-22 21:30:27 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-22 21:30:27 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-22 21:30:28 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 21:30:28 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 21:30:28 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 21:30:28 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-22 21:30:28 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.8669357299804688 mb
+2016-12-22 21:30:28 DEBUG AlgoApriori:475 -  Total time ~ 52 ms
+2016-12-22 21:30:28 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 21:30:28 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 21:30:28 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-22 21:30:28 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-22 21:30:28 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-22 21:30:28 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.188201904296875 mb
+2016-12-22 21:30:28 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-22 21:30:28 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 21:30:28 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 21:30:28 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 21:30:28 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 21:30:28 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-22 21:30:28 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.188201904296875 mb
+2016-12-22 21:30:28 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-22 21:30:28 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 21:30:28 DEBUG AprioriPartitonUtils:118 - database size :5
+2016-12-22 21:30:28 DEBUG AprioriPartitonUtils:122 - =============  APRIORI - STATS =============
+2016-12-22 21:30:28 DEBUG AprioriPartitonUtils:123 -  Candidates count : 1055
+2016-12-22 21:30:28 DEBUG AprioriPartitonUtils:126 -  Frequent itemsets count : 146
+2016-12-22 21:30:28 DEBUG AprioriPartitonUtils:128 -  Total time ~ 143 ms
+2016-12-22 21:30:28 DEBUG AprioriPartitonUtils:129 - ===================================================
+2016-12-22 21:30:58 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 21:30:58 DEBUG AlgoApriori:470 -  Candidates count : 215
+2016-12-22 21:30:58 DEBUG AlgoApriori:471 -  The algorithm stopped at size 7, because there is no candidate
+2016-12-22 21:30:58 DEBUG AlgoApriori:473 -  Frequent itemsets count : 146
+2016-12-22 21:30:58 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.5352325439453125 mb
+2016-12-22 21:30:58 DEBUG AlgoApriori:475 -  Total time ~ 11 ms
+2016-12-22 21:30:58 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 21:32:34 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-22 21:32:34 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-22 21:32:34 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-22 21:32:34 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-22 21:32:34 DEBUG AprioriPartitionTest:48 - 3
+2016-12-22 21:32:34 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-22 21:32:34 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-22 21:32:34 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-22 21:32:34 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-22 21:32:34 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-22 21:32:34 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-22 21:32:34 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 21:32:34 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 21:32:34 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 21:32:34 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-22 21:32:34 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.8669357299804688 mb
+2016-12-22 21:32:34 DEBUG AlgoApriori:475 -  Total time ~ 9 ms
+2016-12-22 21:32:34 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 21:32:34 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 21:32:34 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-22 21:32:34 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-22 21:32:34 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-22 21:32:34 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.1870880126953125 mb
+2016-12-22 21:32:34 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-22 21:32:34 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 21:32:34 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 21:32:34 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 21:32:34 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 21:32:34 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-22 21:32:34 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.1870880126953125 mb
+2016-12-22 21:32:34 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-22 21:32:34 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 21:32:34 DEBUG AprioriPartitonUtils:118 - database size :5
+2016-12-22 21:32:34 DEBUG AprioriPartitonUtils:122 - =============  APRIORI - STATS =============
+2016-12-22 21:32:34 DEBUG AprioriPartitonUtils:123 -  Candidates count : 1055
+2016-12-22 21:32:34 DEBUG AprioriPartitonUtils:126 -  Frequent itemsets count : 146
+2016-12-22 21:32:34 DEBUG AprioriPartitonUtils:128 -  Total time ~ 47 ms
+2016-12-22 21:32:34 DEBUG AprioriPartitonUtils:129 - ===================================================
+2016-12-22 21:32:50 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-22 21:32:50 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-22 21:32:50 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-22 21:32:50 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-22 21:32:50 DEBUG AprioriPartitionTest:48 - 3
+2016-12-22 21:32:50 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-22 21:32:50 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-22 21:32:52 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-22 21:32:52 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-22 21:32:52 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-22 21:32:53 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-22 21:33:02 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 21:33:02 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 21:33:02 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 21:33:02 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-22 21:33:02 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.214500427246094 mb
+2016-12-22 21:33:02 DEBUG AlgoApriori:475 -  Total time ~ 9071 ms
+2016-12-22 21:33:02 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 21:33:06 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 21:33:06 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-22 21:33:06 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-22 21:33:06 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-22 21:33:06 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.550140380859375 mb
+2016-12-22 21:33:06 DEBUG AlgoApriori:475 -  Total time ~ 4589 ms
+2016-12-22 21:33:06 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 21:33:07 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 21:33:07 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 21:33:07 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 21:33:07 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-22 21:33:07 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.550140380859375 mb
+2016-12-22 21:33:07 DEBUG AlgoApriori:475 -  Total time ~ 1275 ms
+2016-12-22 21:33:07 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 22:00:24 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-22 22:00:24 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-22 22:00:24 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-22 22:00:24 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-22 22:00:24 DEBUG AprioriPartitionTest:48 - 3
+2016-12-22 22:00:24 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-22 22:00:24 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-22 22:00:32 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-22 22:00:32 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-22 22:00:32 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-22 22:00:32 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-22 22:00:32 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 22:00:32 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 22:00:32 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 22:00:32 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-22 22:00:32 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.230110168457031 mb
+2016-12-22 22:00:32 DEBUG AlgoApriori:475 -  Total time ~ 13 ms
+2016-12-22 22:00:32 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 22:00:32 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 22:00:32 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-22 22:00:32 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-22 22:00:32 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-22 22:00:32 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.230110168457031 mb
+2016-12-22 22:00:32 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-22 22:00:32 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 22:00:32 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 22:00:32 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 22:00:32 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 22:00:32 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-22 22:00:32 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.550178527832031 mb
+2016-12-22 22:00:32 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-22 22:00:32 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 22:10:06 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-22 22:10:06 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-22 22:10:06 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-22 22:10:06 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-22 22:10:06 DEBUG AprioriPartitionTest:48 - 3
+2016-12-22 22:10:06 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-22 22:10:06 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-22 22:10:06 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-22 22:10:06 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-22 22:10:06 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-22 22:10:06 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-22 22:10:06 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 22:10:06 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 22:10:06 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 22:10:06 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-22 22:10:06 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.859161376953125 mb
+2016-12-22 22:10:06 DEBUG AlgoApriori:475 -  Total time ~ 12 ms
+2016-12-22 22:10:06 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 22:10:06 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 22:10:06 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-22 22:10:06 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-22 22:10:06 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-22 22:10:06 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.17919921875 mb
+2016-12-22 22:10:06 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-22 22:10:06 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 22:10:06 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 22:10:06 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 22:10:06 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 22:10:06 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-22 22:10:06 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.17919921875 mb
+2016-12-22 22:10:06 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-22 22:10:06 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 22:10:06 DEBUG AprioriPartitonUtils:119 - database size :5
+2016-12-22 22:10:06 DEBUG AprioriPartitonUtils:123 - =============  APRIORI - STATS =============
+2016-12-22 22:10:06 DEBUG AprioriPartitonUtils:124 -  Candidates count : 0
+2016-12-22 22:10:06 DEBUG AprioriPartitonUtils:127 -  Frequent itemsets count : 0
+2016-12-22 22:10:06 DEBUG AprioriPartitonUtils:129 -  Total time ~ 39 ms
+2016-12-22 22:10:06 DEBUG AprioriPartitonUtils:130 - ===================================================
+2016-12-22 22:10:14 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-22 22:10:14 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-22 22:10:14 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-22 22:10:14 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-22 22:10:14 DEBUG AprioriPartitionTest:48 - 3
+2016-12-22 22:10:14 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-22 22:10:14 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-22 22:10:14 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-22 22:10:14 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-22 22:10:14 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-22 22:10:14 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-22 22:10:14 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 22:10:14 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 22:10:14 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 22:10:14 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-22 22:10:14 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.230155944824219 mb
+2016-12-22 22:10:14 DEBUG AlgoApriori:475 -  Total time ~ 13 ms
+2016-12-22 22:10:14 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 22:10:14 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 22:10:14 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-22 22:10:14 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-22 22:10:14 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-22 22:10:14 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.230155944824219 mb
+2016-12-22 22:10:14 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-22 22:10:14 DEBUG AlgoApriori:476 - ===================================================
+2016-12-22 22:10:14 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-22 22:10:14 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-22 22:10:14 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-22 22:10:14 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-22 22:10:14 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.550224304199219 mb
+2016-12-22 22:10:14 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-22 22:10:14 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 10:26:40 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 10:26:40 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 10:26:40 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 10:26:40 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 10:26:40 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 10:26:40 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 10:26:40 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 10:26:40 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 10:26:40 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 10:26:40 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 10:26:40 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 10:26:40 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 10:26:40 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 10:26:40 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 10:26:40 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 10:26:40 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.87060546875 mb
+2016-12-25 10:26:41 DEBUG AlgoApriori:475 -  Total time ~ 55 ms
+2016-12-25 10:26:41 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 10:26:41 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 10:26:41 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 10:26:41 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 10:26:41 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 10:26:41 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.190605163574219 mb
+2016-12-25 10:26:41 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 10:26:41 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 10:26:41 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 10:26:41 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 10:26:41 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 10:26:41 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 10:26:41 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.190605163574219 mb
+2016-12-25 10:26:41 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 10:26:41 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 10:26:41 DEBUG AprioriPartitonUtils:121 - database size :5
+2016-12-25 10:26:41 DEBUG AprioriPartitonUtils:125 - =============  APRIORI - STATS =============
+2016-12-25 10:26:41 DEBUG AprioriPartitonUtils:126 -  Candidates count : 0
+2016-12-25 10:26:41 DEBUG AprioriPartitonUtils:129 -  Frequent itemsets count : 0
+2016-12-25 10:26:41 DEBUG AprioriPartitonUtils:131 -  Total time ~ 177 ms
+2016-12-25 10:26:41 DEBUG AprioriPartitonUtils:132 - ===================================================
+2016-12-25 10:27:42 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 10:27:42 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 10:27:42 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 10:27:42 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 10:27:42 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 10:27:42 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 10:27:42 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 10:27:42 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 10:27:42 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 10:27:42 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 10:27:42 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 10:27:42 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 10:27:42 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 10:27:42 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 10:27:42 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 10:27:42 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.8709487915039062 mb
+2016-12-25 10:27:42 DEBUG AlgoApriori:475 -  Total time ~ 9 ms
+2016-12-25 10:27:42 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 10:27:42 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 10:27:42 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 10:27:42 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 10:27:42 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 10:27:42 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.190948486328125 mb
+2016-12-25 10:27:42 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 10:27:42 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 10:27:42 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 10:27:42 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 10:27:42 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 10:27:42 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 10:27:42 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.190948486328125 mb
+2016-12-25 10:27:42 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 10:27:42 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 10:27:42 DEBUG AprioriPartitonUtils:121 - database size :5
+2016-12-25 10:27:42 DEBUG AprioriPartitonUtils:125 - =============  APRIORI - STATS =============
+2016-12-25 10:27:42 DEBUG AprioriPartitonUtils:126 -  Candidates count : 0
+2016-12-25 10:27:42 DEBUG AprioriPartitonUtils:129 -  Frequent itemsets count : 0
+2016-12-25 10:27:42 DEBUG AprioriPartitonUtils:131 -  Total time ~ 25 ms
+2016-12-25 10:27:42 DEBUG AprioriPartitonUtils:132 - ===================================================
+2016-12-25 10:28:10 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 10:28:10 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 10:28:10 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 10:28:10 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 10:28:10 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 10:28:10 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 10:28:10 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 10:28:10 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 10:28:10 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 10:28:10 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 10:28:10 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 10:28:10 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 10:28:10 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 10:28:10 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 10:28:10 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 10:28:10 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.190666198730469 mb
+2016-12-25 10:28:10 DEBUG AlgoApriori:475 -  Total time ~ 12 ms
+2016-12-25 10:28:10 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 10:28:10 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 10:28:10 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 10:28:10 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 10:28:10 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 10:28:10 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.5106658935546875 mb
+2016-12-25 10:28:10 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 10:28:10 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 10:28:10 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 10:28:10 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 10:28:10 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 10:28:10 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 10:28:10 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.5106658935546875 mb
+2016-12-25 10:28:10 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 10:28:10 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 11:05:04 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 11:05:04 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 11:05:04 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 11:05:04 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 11:05:04 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 11:05:04 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 11:05:04 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 11:05:04 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 11:05:04 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 11:05:04 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 11:05:04 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 11:05:04 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 11:05:04 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 11:05:04 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 11:05:04 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 11:05:04 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.22967529296875 mb
+2016-12-25 11:05:04 DEBUG AlgoApriori:475 -  Total time ~ 23 ms
+2016-12-25 11:05:04 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 11:05:04 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 11:05:04 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 11:05:04 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 11:05:04 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 11:05:04 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.22967529296875 mb
+2016-12-25 11:05:04 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 11:05:04 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 11:05:04 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 11:05:04 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 11:05:04 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 11:05:04 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 11:05:04 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.54986572265625 mb
+2016-12-25 11:05:04 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 11:05:04 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 11:10:28 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 11:10:28 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 11:10:28 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 11:10:28 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 11:10:28 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 11:10:28 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 11:10:28 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 11:10:28 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 11:10:28 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 11:10:28 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 11:10:28 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 11:10:29 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 11:10:29 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 11:10:29 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 11:10:29 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 11:10:29 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.2296142578125 mb
+2016-12-25 11:10:29 DEBUG AlgoApriori:475 -  Total time ~ 62 ms
+2016-12-25 11:10:29 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 11:10:29 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 11:10:29 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 11:10:29 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 11:10:29 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 11:10:29 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.2296142578125 mb
+2016-12-25 11:10:29 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 11:10:29 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 11:10:29 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 11:10:29 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 11:10:29 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 11:10:29 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 11:10:29 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.549613952636719 mb
+2016-12-25 11:10:29 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 11:10:29 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:21:04 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 12:21:04 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 12:21:04 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 12:21:04 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 12:21:04 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 12:21:04 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 12:21:04 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 12:21:04 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 12:21:04 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 12:21:04 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 12:21:04 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 12:21:04 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:21:04 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:21:04 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:21:04 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 12:21:04 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.22967529296875 mb
+2016-12-25 12:21:04 DEBUG AlgoApriori:475 -  Total time ~ 19 ms
+2016-12-25 12:21:04 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:21:04 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:21:04 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 12:21:04 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 12:21:04 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 12:21:04 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.22967529296875 mb
+2016-12-25 12:21:04 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 12:21:04 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:21:04 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:21:04 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:21:04 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:21:04 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 12:21:04 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.54986572265625 mb
+2016-12-25 12:21:04 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 12:21:04 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:22:14 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 12:22:14 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 12:22:14 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 12:22:14 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 12:22:14 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 12:22:14 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 12:22:14 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 12:22:14 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 12:22:14 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 12:22:14 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 12:22:14 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 12:22:14 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:22:14 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:22:14 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:22:14 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 12:22:14 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.2296142578125 mb
+2016-12-25 12:22:14 DEBUG AlgoApriori:475 -  Total time ~ 13 ms
+2016-12-25 12:22:14 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:22:14 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:22:14 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 12:22:14 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 12:22:14 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 12:22:14 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.2296142578125 mb
+2016-12-25 12:22:14 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 12:22:14 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:22:14 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:22:14 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:22:14 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:22:14 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 12:22:14 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.549613952636719 mb
+2016-12-25 12:22:14 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 12:22:14 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:25:05 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 12:25:05 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 12:25:05 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 12:25:05 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 12:25:05 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 12:25:05 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 12:25:05 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 12:25:05 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 12:25:05 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 12:25:05 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 12:25:05 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 12:25:05 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:25:05 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:25:05 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:25:05 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 12:25:05 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.2296905517578125 mb
+2016-12-25 12:25:05 DEBUG AlgoApriori:475 -  Total time ~ 84 ms
+2016-12-25 12:25:05 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:25:05 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:25:05 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 12:25:05 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 12:25:05 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 12:25:05 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.2296905517578125 mb
+2016-12-25 12:25:05 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 12:25:05 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:25:05 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:25:05 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:25:05 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:25:05 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 12:25:05 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.5498809814453125 mb
+2016-12-25 12:25:05 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 12:25:05 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:27:10 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 12:27:10 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 12:27:10 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 12:27:10 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 12:27:10 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 12:27:10 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 12:27:10 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 12:27:10 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 12:27:10 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 12:27:10 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 12:27:10 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 12:27:10 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:27:10 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:27:10 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:27:10 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 12:27:10 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.2297515869140625 mb
+2016-12-25 12:27:10 DEBUG AlgoApriori:475 -  Total time ~ 11 ms
+2016-12-25 12:27:10 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:27:10 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:27:10 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 12:27:10 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 12:27:10 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 12:27:10 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.2297515869140625 mb
+2016-12-25 12:27:10 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 12:27:10 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:27:10 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:27:10 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:27:10 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:27:10 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 12:27:10 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.5499420166015625 mb
+2016-12-25 12:27:10 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 12:27:10 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:37:51 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 12:37:51 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 12:37:51 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 12:37:51 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 12:37:51 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 12:37:51 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 12:37:51 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 12:37:51 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 12:37:51 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 12:37:51 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 12:37:51 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 12:37:51 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:37:51 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:37:51 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:37:51 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 12:37:51 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.229789733886719 mb
+2016-12-25 12:37:51 DEBUG AlgoApriori:475 -  Total time ~ 11 ms
+2016-12-25 12:37:51 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:37:51 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:37:51 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 12:37:51 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 12:37:51 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 12:37:51 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.229789733886719 mb
+2016-12-25 12:37:51 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 12:37:51 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:37:51 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:37:51 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:37:51 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:37:51 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 12:37:51 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.5497894287109375 mb
+2016-12-25 12:37:51 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 12:37:51 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:59:06 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 12:59:06 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 12:59:06 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 12:59:06 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 12:59:06 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 12:59:06 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 12:59:06 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 12:59:06 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 12:59:06 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 12:59:06 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 12:59:06 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 12:59:06 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:59:06 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:59:06 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:59:06 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 12:59:06 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.2296600341796875 mb
+2016-12-25 12:59:06 DEBUG AlgoApriori:475 -  Total time ~ 13 ms
+2016-12-25 12:59:06 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:59:06 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:59:06 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 12:59:06 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 12:59:06 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 12:59:06 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.2296600341796875 mb
+2016-12-25 12:59:06 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 12:59:06 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 12:59:06 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 12:59:06 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 12:59:06 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 12:59:06 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 12:59:06 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.549659729003906 mb
+2016-12-25 12:59:06 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 12:59:06 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 13:20:09 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 13:20:09 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 13:20:09 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 13:20:09 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 13:20:09 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 13:20:09 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 13:20:09 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 13:20:09 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 13:20:09 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 13:20:09 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 13:20:09 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 13:20:09 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 13:20:09 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 13:20:09 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 13:20:09 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 13:20:09 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.910003662109375 mb
+2016-12-25 13:20:09 DEBUG AlgoApriori:475 -  Total time ~ 8 ms
+2016-12-25 13:20:09 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 13:20:09 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 13:20:09 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 13:20:09 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 13:20:09 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 13:20:09 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.910003662109375 mb
+2016-12-25 13:20:09 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 13:20:09 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 13:20:09 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 13:20:09 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 13:20:09 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 13:20:09 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 13:20:09 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.230003356933594 mb
+2016-12-25 13:20:09 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 13:20:09 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 13:20:09 DEBUG AprioriPartitonUtils:122 - database size :5
+2016-12-25 13:20:09 DEBUG AprioriPartitonUtils:127 - =============  APRIORI - STATS =============
+2016-12-25 13:20:09 DEBUG AprioriPartitonUtils:128 -  Candidates count : 94
+2016-12-25 13:20:09 DEBUG AprioriPartitonUtils:131 -  Frequent itemsets count : 29
+2016-12-25 13:20:09 DEBUG AprioriPartitonUtils:134 -  Total time ~ 40 ms
+2016-12-25 13:20:09 DEBUG AprioriPartitonUtils:135 - ===================================================
+2016-12-25 15:26:46 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 15:26:46 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 15:26:46 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 15:26:46 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 15:26:46 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 15:26:46 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 15:26:46 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 15:26:46 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 15:26:46 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 15:26:46 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 15:26:46 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 15:26:46 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:26:46 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 15:26:46 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 15:26:46 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 15:26:46 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.8632125854492188 mb
+2016-12-25 15:26:46 DEBUG AlgoApriori:475 -  Total time ~ 45 ms
+2016-12-25 15:26:46 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:26:46 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:26:46 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 15:26:46 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 15:26:46 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 15:26:46 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.1832427978515625 mb
+2016-12-25 15:26:46 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 15:26:46 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:26:46 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:26:46 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 15:26:46 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 15:26:46 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 15:26:46 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.1832427978515625 mb
+2016-12-25 15:26:46 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 15:26:46 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:26:46 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 15:26:46 DEBUG AprioriPartitonUtils:128 - =============  APRIORI - STATS =============
+2016-12-25 15:26:46 DEBUG AprioriPartitonUtils:129 -  Candidates count : 0
+2016-12-25 15:26:46 DEBUG AprioriPartitonUtils:132 -  Frequent itemsets count : 0
+2016-12-25 15:26:46 DEBUG AprioriPartitonUtils:135 -  Total time ~ 78 ms
+2016-12-25 15:26:46 DEBUG AprioriPartitonUtils:136 - ===================================================
+2016-12-25 15:31:39 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 15:31:39 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 15:31:39 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 15:31:39 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 15:31:39 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 15:31:39 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 15:31:39 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 15:31:39 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 15:31:39 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 15:31:39 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 15:31:39 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 15:31:39 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:31:39 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 15:31:39 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 15:31:39 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 15:31:39 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.198936462402344 mb
+2016-12-25 15:31:39 DEBUG AlgoApriori:475 -  Total time ~ 12 ms
+2016-12-25 15:31:39 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:31:39 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:31:39 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 15:31:39 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 15:31:39 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 15:31:39 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.519012451171875 mb
+2016-12-25 15:31:39 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 15:31:39 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:31:39 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:31:39 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 15:31:39 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 15:31:39 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 15:31:39 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.519012451171875 mb
+2016-12-25 15:31:39 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 15:31:39 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:31:39 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 15:32:07 DEBUG AprioriPartitonUtils:128 - =============  APRIORI - STATS =============
+2016-12-25 15:32:07 DEBUG AprioriPartitonUtils:129 -  Candidates count : 0
+2016-12-25 15:32:07 DEBUG AprioriPartitonUtils:132 -  Frequent itemsets count : 0
+2016-12-25 15:32:07 DEBUG AprioriPartitonUtils:135 -  Total time ~ 27699 ms
+2016-12-25 15:32:07 DEBUG AprioriPartitonUtils:136 - ===================================================
+2016-12-25 15:32:30 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 15:32:30 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 15:32:30 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 15:32:30 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 15:32:30 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 15:32:30 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 15:32:30 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 15:32:30 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 15:32:30 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 15:32:30 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 15:32:30 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 15:32:30 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:32:30 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 15:32:30 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 15:32:30 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 15:32:30 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.198890686035156 mb
+2016-12-25 15:32:30 DEBUG AlgoApriori:475 -  Total time ~ 12 ms
+2016-12-25 15:32:30 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:32:30 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:32:30 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 15:32:30 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 15:32:30 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 15:32:30 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.518890380859375 mb
+2016-12-25 15:32:30 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 15:32:30 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:32:30 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:32:30 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 15:32:30 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 15:32:30 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 15:32:30 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.518890380859375 mb
+2016-12-25 15:32:30 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 15:32:30 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:33:24 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 15:33:24 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 15:33:24 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 15:33:24 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 15:33:24 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 15:33:24 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 15:33:24 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 15:33:24 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 15:33:24 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 15:33:24 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 15:33:24 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 15:33:24 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:33:24 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 15:33:24 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 15:33:24 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 15:33:24 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.198890686035156 mb
+2016-12-25 15:33:24 DEBUG AlgoApriori:475 -  Total time ~ 9 ms
+2016-12-25 15:33:24 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:33:24 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:33:24 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 15:33:24 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 15:33:24 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 15:33:24 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.518890380859375 mb
+2016-12-25 15:33:24 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 15:33:24 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:33:24 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:33:24 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 15:33:24 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 15:33:24 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 15:33:24 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.518890380859375 mb
+2016-12-25 15:33:24 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 15:33:24 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:34:07 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 15:34:07 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 15:34:07 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 15:34:07 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 15:34:07 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 15:34:07 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 15:34:07 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 15:34:07 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 15:34:07 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 15:34:07 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 15:34:07 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 15:34:07 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:34:07 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 15:34:07 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 15:34:07 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 15:34:07 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.198936462402344 mb
+2016-12-25 15:34:07 DEBUG AlgoApriori:475 -  Total time ~ 9 ms
+2016-12-25 15:34:07 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:34:07 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:34:07 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 15:34:07 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 15:34:07 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 15:34:07 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.5189361572265625 mb
+2016-12-25 15:34:07 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 15:34:07 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:34:07 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 15:34:07 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 15:34:07 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 15:34:07 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 15:34:07 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.5189361572265625 mb
+2016-12-25 15:34:07 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 15:34:07 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 15:34:07 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 17:32:13 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 17:32:13 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 17:32:13 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 17:32:13 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 17:32:13 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 17:32:13 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 17:32:13 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 17:32:13 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 17:32:13 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 17:32:13 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 17:32:13 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 17:32:13 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:32:13 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:32:13 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:32:13 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 17:32:13 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.179512023925781 mb
+2016-12-25 17:32:13 DEBUG AlgoApriori:475 -  Total time ~ 37 ms
+2016-12-25 17:32:13 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:32:13 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:32:13 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 17:32:13 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 17:32:13 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 17:32:13 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.499542236328125 mb
+2016-12-25 17:32:13 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 17:32:13 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:32:13 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:32:13 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:32:13 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:32:13 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 17:32:13 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.499542236328125 mb
+2016-12-25 17:32:13 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 17:32:13 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:32:13 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 17:34:58 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 17:34:58 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 17:34:58 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 17:34:58 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 17:34:58 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 17:34:58 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 17:34:58 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 17:34:58 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 17:34:58 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 17:34:58 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 17:34:58 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 17:34:58 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:34:58 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:34:58 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:34:58 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 17:34:58 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.8639907836914062 mb
+2016-12-25 17:34:58 DEBUG AlgoApriori:475 -  Total time ~ 11 ms
+2016-12-25 17:34:58 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:34:58 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:34:58 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 17:34:58 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 17:34:58 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 17:34:58 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.184028625488281 mb
+2016-12-25 17:34:58 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 17:34:58 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:34:58 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:34:58 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:34:58 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:34:58 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 17:34:58 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.184028625488281 mb
+2016-12-25 17:34:58 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 17:34:58 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:34:58 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 17:34:58 DEBUG AprioriPartitonUtils:128 - =============  APRIORI - STATS =============
+2016-12-25 17:34:58 DEBUG AprioriPartitonUtils:129 -  Candidates count : 0
+2016-12-25 17:34:58 DEBUG AprioriPartitonUtils:132 -  Frequent itemsets count : 0
+2016-12-25 17:34:58 DEBUG AprioriPartitonUtils:135 -  Total time ~ 32 ms
+2016-12-25 17:34:58 DEBUG AprioriPartitonUtils:136 - ===================================================
+2016-12-25 17:36:03 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 17:36:03 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 17:36:03 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 17:36:03 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 17:36:03 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 17:36:03 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 17:36:03 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 17:36:03 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 17:36:03 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 17:36:03 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 17:36:03 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 17:36:03 DEBUG Itemsets:61 -  ------- FREQUENT ITEMSETS -------
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L0 
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L1 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L2 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L3 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:83 -  --------------------------------
+2016-12-25 17:36:03 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:36:03 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:36:03 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:36:03 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 17:36:03 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.8639907836914062 mb
+2016-12-25 17:36:03 DEBUG AlgoApriori:475 -  Total time ~ 10 ms
+2016-12-25 17:36:03 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:36:03 DEBUG Itemsets:61 -  ------- FREQUENT ITEMSETS -------
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L0 
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L1 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L2 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:83 -  --------------------------------
+2016-12-25 17:36:03 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:36:03 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 17:36:03 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 17:36:03 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 17:36:03 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.184013366699219 mb
+2016-12-25 17:36:03 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 17:36:03 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:36:03 DEBUG Itemsets:61 -  ------- FREQUENT ITEMSETS -------
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L0 
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L1 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L2 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:69 -   L3 
+2016-12-25 17:36:03 DEBUG Itemsets:79 - 
+2016-12-25 17:36:03 DEBUG Itemsets:83 -  --------------------------------
+2016-12-25 17:36:03 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:36:03 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:36:03 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:36:03 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 17:36:03 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.184013366699219 mb
+2016-12-25 17:36:03 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 17:36:03 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:36:03 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 17:36:03 DEBUG AprioriPartitonUtils:128 - =============  APRIORI - STATS =============
+2016-12-25 17:36:03 DEBUG AprioriPartitonUtils:129 -  Candidates count : 0
+2016-12-25 17:36:03 DEBUG AprioriPartitonUtils:132 -  Frequent itemsets count : 0
+2016-12-25 17:36:03 DEBUG AprioriPartitonUtils:135 -  Total time ~ 47 ms
+2016-12-25 17:36:03 DEBUG AprioriPartitonUtils:136 - ===================================================
+2016-12-25 17:36:56 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 17:36:56 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 17:36:56 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 17:36:56 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 17:36:56 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 17:36:56 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 17:36:56 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 17:36:56 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 17:36:56 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 17:36:56 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 17:36:56 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 17:36:56 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:36:56 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:36:56 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:36:56 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 17:36:56 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.864013671875 mb
+2016-12-25 17:36:56 DEBUG AlgoApriori:475 -  Total time ~ 6 ms
+2016-12-25 17:36:56 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:36:56 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:36:56 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 17:36:56 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 17:36:56 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 17:36:56 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.1840362548828125 mb
+2016-12-25 17:36:56 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 17:36:56 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:36:56 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:36:56 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:36:56 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:36:56 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 17:36:56 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.1840362548828125 mb
+2016-12-25 17:36:56 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 17:36:56 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:36:56 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 17:36:56 DEBUG AprioriPartitonUtils:128 - =============  APRIORI - STATS =============
+2016-12-25 17:36:56 DEBUG AprioriPartitonUtils:129 -  Candidates count : 0
+2016-12-25 17:36:56 DEBUG AprioriPartitonUtils:132 -  Frequent itemsets count : 0
+2016-12-25 17:36:56 DEBUG AprioriPartitonUtils:135 -  Total time ~ 31 ms
+2016-12-25 17:36:56 DEBUG AprioriPartitonUtils:136 - ===================================================
+2016-12-25 17:38:12 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 17:38:12 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 17:38:12 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 17:38:12 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 17:38:12 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 17:38:12 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 17:38:12 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 17:38:12 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 17:38:12 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 17:38:12 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 17:38:12 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 17:38:12 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:38:12 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:38:12 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:38:12 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 17:38:12 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.864013671875 mb
+2016-12-25 17:38:12 DEBUG AlgoApriori:475 -  Total time ~ 10 ms
+2016-12-25 17:38:12 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:38:12 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:38:12 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 17:38:12 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 17:38:12 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 17:38:12 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.1840362548828125 mb
+2016-12-25 17:38:12 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 17:38:12 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:38:12 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:38:12 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:38:12 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:38:12 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 17:38:12 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.1840362548828125 mb
+2016-12-25 17:38:12 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 17:38:12 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:38:12 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 17:38:12 DEBUG AprioriPartitonUtils:128 - =============  APRIORI - STATS =============
+2016-12-25 17:38:12 DEBUG AprioriPartitonUtils:129 -  Candidates count : 0
+2016-12-25 17:38:12 DEBUG AprioriPartitonUtils:132 -  Frequent itemsets count : 0
+2016-12-25 17:38:12 DEBUG AprioriPartitonUtils:135 -  Total time ~ 57 ms
+2016-12-25 17:38:12 DEBUG AprioriPartitonUtils:136 - ===================================================
+2016-12-25 17:58:31 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 17:58:31 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 17:58:31 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 17:58:31 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 17:58:31 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 17:58:31 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 17:58:31 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 17:58:31 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 17:58:31 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 17:58:31 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 17:58:31 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 17:58:31 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:58:31 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:58:31 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:58:31 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 17:58:31 DEBUG AlgoApriori:474 -  Maximum memory usage : 3.864013671875 mb
+2016-12-25 17:58:31 DEBUG AlgoApriori:475 -  Total time ~ 9 ms
+2016-12-25 17:58:31 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:58:31 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:58:31 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 17:58:31 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 17:58:31 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 17:58:31 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.1840667724609375 mb
+2016-12-25 17:58:31 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 17:58:31 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:58:31 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:58:31 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:58:31 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:58:31 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 17:58:31 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.1840667724609375 mb
+2016-12-25 17:58:31 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 17:58:31 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:58:31 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 17:59:38 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 17:59:38 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 17:59:38 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 17:59:38 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 17:59:38 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 17:59:38 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 17:59:38 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 17:59:38 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 17:59:38 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 17:59:38 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 17:59:38 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 17:59:38 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:59:38 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:59:38 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:59:38 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 17:59:38 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.179557800292969 mb
+2016-12-25 17:59:38 DEBUG AlgoApriori:475 -  Total time ~ 11 ms
+2016-12-25 17:59:38 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:59:38 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:59:38 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 17:59:38 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 17:59:38 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 17:59:38 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.499671936035156 mb
+2016-12-25 17:59:38 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 17:59:38 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:59:38 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 17:59:38 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 17:59:38 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 17:59:38 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 17:59:38 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.499671936035156 mb
+2016-12-25 17:59:38 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 17:59:38 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 17:59:38 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 18:05:18 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 18:05:18 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 18:05:18 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 18:05:18 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 18:05:18 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 18:05:18 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 18:05:18 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 18:05:18 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 18:05:18 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 18:05:18 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 18:05:18 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 18:05:18 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 18:05:18 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 18:05:18 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 18:05:18 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 18:05:18 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.179557800292969 mb
+2016-12-25 18:05:18 DEBUG AlgoApriori:475 -  Total time ~ 10 ms
+2016-12-25 18:05:18 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 18:05:18 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 18:05:18 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 18:05:18 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 18:05:18 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 18:05:18 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.499671936035156 mb
+2016-12-25 18:05:18 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 18:05:18 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 18:05:18 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 18:05:18 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 18:05:18 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 18:05:18 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 18:05:18 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.499671936035156 mb
+2016-12-25 18:05:18 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 18:05:18 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 18:05:18 DEBUG AprioriPartitonUtils:123 - database size :5
+2016-12-25 18:07:35 DEBUG AprioriPartitionTest:42 - Partitioning Started...
+2016-12-25 18:07:35 DEBUG AprioriPartitionTest:43 - Enter file name
+2016-12-25 18:07:35 DEBUG AprioriPartitionTest:45 - AITData
+2016-12-25 18:07:35 DEBUG AprioriPartitionTest:46 - Enter number of partition
+2016-12-25 18:07:35 DEBUG AprioriPartitionTest:48 - 3
+2016-12-25 18:07:35 DEBUG AprioriPartitionTest:62 - Enter min support 0.0 to 0.99 range 
+2016-12-25 18:07:35 DEBUG AprioriPartitionTest:64 - min support :0.4
+2016-12-25 18:07:35 DEBUG CreatePartition:43 - partition_AITData0 is deleted!
+2016-12-25 18:07:35 DEBUG CreatePartition:43 - partition_AITData1 is deleted!
+2016-12-25 18:07:35 DEBUG CreatePartition:43 - partition_AITData2 is deleted!
+2016-12-25 18:07:35 DEBUG CreatePartition:71 - Partition Created Successfully.
+2016-12-25 18:07:35 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 18:07:35 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 18:07:35 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 18:07:35 DEBUG AlgoApriori:473 -  Frequent itemsets count : 10
+2016-12-25 18:07:35 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.179557800292969 mb
+2016-12-25 18:07:35 DEBUG AlgoApriori:475 -  Total time ~ 12 ms
+2016-12-25 18:07:35 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 18:07:35 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 18:07:35 DEBUG AlgoApriori:470 -  Candidates count : 15
+2016-12-25 18:07:35 DEBUG AlgoApriori:471 -  The algorithm stopped at size 3, because there is no candidate
+2016-12-25 18:07:35 DEBUG AlgoApriori:473 -  Frequent itemsets count : 7
+2016-12-25 18:07:35 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.4996337890625 mb
+2016-12-25 18:07:35 DEBUG AlgoApriori:475 -  Total time ~ 1 ms
+2016-12-25 18:07:35 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 18:07:35 DEBUG AlgoApriori:469 - =============  APRIORI - STATS =============
+2016-12-25 18:07:35 DEBUG AlgoApriori:470 -  Candidates count : 16
+2016-12-25 18:07:35 DEBUG AlgoApriori:471 -  The algorithm stopped at size 4, because there is no candidate
+2016-12-25 18:07:35 DEBUG AlgoApriori:473 -  Frequent itemsets count : 11
+2016-12-25 18:07:35 DEBUG AlgoApriori:474 -  Maximum memory usage : 4.4996337890625 mb
+2016-12-25 18:07:35 DEBUG AlgoApriori:475 -  Total time ~ 0 ms
+2016-12-25 18:07:35 DEBUG AlgoApriori:476 - ===================================================
+2016-12-25 18:07:35 DEBUG AprioriPartitonUtils:123 - database size :5
