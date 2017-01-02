@@ -179,11 +179,22 @@ public class Itemset extends AbstractOrderedItemset implements Comparable<Itemse
 
 	@Override
 	public int compareTo(Itemset o) {
+		int results=0;
+		for(int i=0; i< o.size(); i++){
+			if(o.itemset[i] == this.itemset[i]){
+				continue;
+			}else{
+				results = (o.itemset[i] < this.itemset[i]) ? -1 : ((o.itemset[i] == this.itemset[i]) ? 0 : 1);
+				break;
+			}
+		}
 		
-		Integer t1=o.itemset[0];
-		Integer t2 = this.itemset[0];
 		
-		return t1.compareTo(t2) ;
+		//int x=o.itemset[0];
+		//int y= this.itemset[0];
+		
+		//return (x < y) ? -1 : ((x == y) ? 0 : 1);
+		return results;
 	}
 	
 	

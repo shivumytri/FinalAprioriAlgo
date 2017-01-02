@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -69,7 +70,7 @@ public class AprioriPartition {
 
 		totalCandidateCount += frequentSingleItemset.size();
 
-		candidatesK = apUtils.generateCandidate2(frequentSingleItemset, results, 2);
+		candidatesK = apUtils.generateCandidate2(results);
 
 		Itemsets patterns = new Itemsets("FREQUENT ITEMSETS");
 
@@ -83,7 +84,9 @@ public class AprioriPartition {
 		do {
 
 			if (k != 2) {
-				level = combinePartitionDataWithCurrent(level, patterns, --k);
+				int previousLevel = k;
+				level = patterns.getLevels().get(--previousLevel);
+				Collections.sort(level,Collections.reverseOrder());
 				candidatesK = apUtils.generateCandidateSizeK(level);
 			}
 
@@ -149,8 +152,32 @@ public class AprioriPartition {
 
 		List<Itemset> partitionItemsets = patterns.getLevels().get(previousLevel);
 		level.addAll(partitionItemsets);
+		Collections.sort(level,  Collections.reverseOrder());
 
+		//for (Itemset oldItmSet : partitionItemsets) {
+		//	int pos = getPositionToPlace(oldItmSet.getItems(), level);
+		//	level.add((pos - 1), oldItmSet);
+		//}
 		return level;
+	}
+
+	private int getPositionToPlace(int[] oldItmSet, List<Itemset> level) {
+
+		for (int j = 0; j < level.size(); j++) {
+
+			int[] inTestArryCur = level.get(j).getItems();
+			
+			for (int i = 0; i < inTestArryCur.length; i++) {
+				if (inTestArryCur[i] == oldItmSet[i] ) {
+					continue;
+				} else if (inTestArryCur[i] != oldItmSet[i]) {
+					continue;
+				} else {
+					break;
+				}
+			}
+		}
+		return 1;
 	}
 
 	private Itemsets addAllItemsetOfPartition(List<Itemsets> results) {
@@ -166,7 +193,7 @@ public class AprioriPartition {
 		}
 		return allItemsets;
 	}
-	
+
 	public int getTotalCandidateCount() {
 		return totalCandidateCount;
 	}

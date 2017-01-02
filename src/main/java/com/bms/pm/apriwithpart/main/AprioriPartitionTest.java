@@ -91,7 +91,7 @@ public class AprioriPartitionTest {
 		patterns = ApPartAlgo.checkSupportCount(lstOfItmSetForEachPartition, dbdata,
 				(int) Math.ceil(minSup * dbdata.size()));
 
-		patterns.printItemsets();
+		//patterns.printItemsets();
 
 		endTimestamp = System.currentTimeMillis();
 		
