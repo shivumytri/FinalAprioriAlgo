@@ -15,12 +15,13 @@ public class MainTestApriori_saveToFile {
 
 	public static void main(String [] arg) throws IOException{
 		
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Apriori Started...");		
 
 		System.out.println("Enter file name");
-		String filename =  "BMSCEdata";//sc.next();
+		String filename =  "AITData";//sc.next();
 		
 		String input = ".\\src\\test\\resources\\discretizeddata\\" + filename;
 		String output = ".\\src\\test\\resources\\finaloutput\\"+ filename +"_out";  // the path for saving the frequent itemsets found
