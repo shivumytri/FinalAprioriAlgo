@@ -6,7 +6,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -18,7 +17,6 @@ import com.bms.pm.apriwithpart.datadiscretizaton.NCR;
 import ca.pfv.spmf.algorithms.ArraysAlgos;
 import ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemset;
 import ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemsets;
-import ca.pfv.spmf.tools.MemoryLogger;
 
 public class AprioriPartitonUtils {
 
@@ -47,12 +45,16 @@ public class AprioriPartitonUtils {
 		return allcombinations;
 	}
 
-	void saveItemsetToFile(Itemset itemset, BufferedWriter writer) throws IOException {
+	public void saveItemsetToFile(Itemsets itemsets, BufferedWriter writer) throws IOException {
 
 		// if the result should be saved to a file
-		if (writer != null) {
-			writer.write(itemset.toString() + " #SUP: " + itemset.getAbsoluteSupport());
-			writer.newLine();
+		for (List<Itemset> listitemset : itemsets.getLevels()) {
+			for (Itemset itemset : listitemset) {
+				if (writer != null) {
+					writer.write(itemset.toString() + " #SUP: " + itemset.getAbsoluteSupport());
+					writer.newLine();
+				}
+			}
 		}
 	}
 
@@ -177,15 +179,15 @@ public class AprioriPartitonUtils {
 			Collections.sort(results.get(k).getLevels().get(1), Collections.reverseOrder());
 
 			for (int i = 0; i < results.get(k).getLevels().get(1).size(); i++) {
-				Integer item1 = results.get(k).getLevels().get(1).get(i).get(0);				
+				Integer item1 = results.get(k).getLevels().get(1).get(i).get(0);
 
 				for (int l = k + 1; l < results.size(); l++) {
 
 					for (int j = 0; j < results.get(l).getLevels().get(1).size(); j++) {
 						Collections.sort(results.get(l).getLevels().get(1), Collections.reverseOrder());
-						
+
 						Integer item2 = results.get(l).getLevels().get(1).get(j).get(0);
-						
+
 						// Create a new candidate by combining itemset1 and
 						// itemset2
 						Itemset newItemset = new Itemset(new int[] { item1, item2 });
@@ -204,7 +206,7 @@ public class AprioriPartitonUtils {
 	 *            frequent itemsets of size k-1
 	 * @return itemsets of size k
 	 */
-	public List<Itemset> generateCandidateSizeK(List<Itemset> levelK_1) {
+	public List<Itemset> generateCandidateSizeK(List<Itemset> levelK_1, List<Itemset> level) {
 		// create a variable to store candidates
 		List<Itemset> candidates = new ArrayList<Itemset>();
 
@@ -247,7 +249,15 @@ public class AprioriPartitonUtils {
 				// included in
 				// level k-1 (they are frequent).
 				if (allSubsetsOfSizeK_1AreFrequent(newItemset, levelK_1)) {
-					candidates.add(new Itemset(newItemset));
+					Itemset newitemset = new Itemset(newItemset);
+					int test = -1;
+					for (Itemset itemset : level) {
+						test = itemset.compareTo(newitemset);
+						if (test == 0)
+							break;
+					}
+					if(test != 0)
+					candidates.add(newitemset);
 				}
 			}
 		}

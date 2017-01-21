@@ -1,11 +1,8 @@
 package com.bms.pm.apriwithpart.main;
 
-
-import java.io.File;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import ca.pfv.spmf.algorithms.frequentpatterns.apriori.AlgoApriori;
@@ -23,14 +20,14 @@ public class MainTestApriori_saveToFile {
 		System.out.println("Apriori Started...");		
 
 		System.out.println("Enter file name");
-		String filename =  sc.next();
+		String filename =  "BMSCEdata";//sc.next();
 		
 		String input = ".\\src\\test\\resources\\discretizeddata\\" + filename;
 		String output = ".\\src\\test\\resources\\finaloutput\\"+ filename +"_out";  // the path for saving the frequent itemsets found
 		
 		System.out.println("Enter min support 0.0 to 0.99 range ");
 
-		double minsup =sc.nextDouble();
+		double minsup = 0.4; //sc.nextDouble();
 
 		System.out.println("min support :" + minsup);
 		
@@ -40,6 +37,8 @@ public class MainTestApriori_saveToFile {
 		apriori.printStats();
 		
 		System.out.println("Successfully completed..");
+		
+		sc.close();
 
 	}
 	

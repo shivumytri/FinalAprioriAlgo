@@ -52,6 +52,7 @@ public class CreatePartition {
 		BufferedWriter bw = null;
 
 		String line = bf.readLine();
+		//int k=0;
 
 		while (line != null) {
 
@@ -65,6 +66,7 @@ public class CreatePartition {
 			}
 
 			line = bf.readLine();
+		//	logger.debug(k++);
 		}
 
 		bf.close();

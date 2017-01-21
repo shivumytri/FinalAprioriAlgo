@@ -18,12 +18,9 @@ package ca.pfv.spmf.patterns.itemset_array_integers_with_count;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-
-import com.bms.pm.apriwithpart.main.AprioriPartitionTest;
 
 /**
  * This class represents a set of itemsets, where an itemset is an array of integers 
@@ -43,6 +40,7 @@ public class Itemsets{
 	/** a name that we give to these itemsets (e.g. "frequent itemsets") */
 	private String name;
 
+	private int totalCandidateCount =0 ;
 	/**
 	 * Constructor
 	 * @param name the name of these itemsets
@@ -93,6 +91,14 @@ public class Itemsets{
 		levels.get(k).add(itemset);
 		itemsetsCount++;
 	}
+	
+	public void addItemsetList(List<Itemset> itemset, int k) {
+		while (levels.size() <= k) {
+			levels.add(new ArrayList<Itemset>());
+		}
+		levels.get(k).addAll(itemset);
+		itemsetsCount += itemset.size();
+	}
 
 	/* (non-Javadoc)
 	 * @see ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#getLevels()
@@ -121,4 +127,20 @@ public class Itemsets{
 	public void decreaseItemsetCount() {
 		itemsetsCount--;
 	}
+
+	public int getTotalCandidateCount() {
+		return totalCandidateCount;
+	}
+
+	public void setTotalCandidateCount(int totalCandidateCount) {
+		this.totalCandidateCount = totalCandidateCount;
+	}
+
+	public void addItemsetListNew(List<Itemset> itemset, int k) {
+		levels.get(k).clear();
+		levels.get(k).addAll(itemset);
+		itemsetsCount += itemset.size();	
+	}
+	
+	
 }

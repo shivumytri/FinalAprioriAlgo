@@ -30,7 +30,6 @@ import java.util.Map.Entry;
 
 import org.apache.log4j.Logger;
 
-import com.bms.pm.apriwithpart.partition.CreatePartition;
 
 import ca.pfv.spmf.algorithms.ArraysAlgos;
 import ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemset;
@@ -112,7 +111,7 @@ public class AlgoApriori {
 			writer = null;
 			patterns =  new Itemsets("FREQUENT ITEMSETS");
 	    }else{ // if the user want to save the result to a file
-			patterns = null;
+			patterns = new Itemsets("FREQUENT ITEMSETS");
 			writer = new BufferedWriter(new FileWriter(output)); 
 		}
 		
@@ -304,6 +303,7 @@ public class AlgoApriori {
 			writer.close();
 		}
 		
+		patterns.setTotalCandidateCount(totalCandidateCount);
 		return patterns;
 	}
 
