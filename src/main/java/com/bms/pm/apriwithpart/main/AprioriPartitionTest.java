@@ -34,7 +34,7 @@ public class AprioriPartitionTest {
 
 		logger.debug("Partitioning Started...");
 		logger.debug("Enter file name");
-		String fileName = "BMSCEdata"; // sc.next();
+		String fileName = "alldata"; // sc.next();
 		logger.debug(fileName);
 		logger.debug("Enter number of partition");
 		int noOfPartition = 3;// sc.nextInt();
@@ -55,6 +55,8 @@ public class AprioriPartitionTest {
 		logger.debug("Enter min support 0.0 to 0.99 range ");
 		double minSup = 0.4;// sc.nextDouble();
 		logger.debug("min support :" + minSup);
+		
+		startTimestamp = System.currentTimeMillis();
 
 		CreatePartition createPartition = new CreatePartition();
 		ArrayList<File> listOfFileObj = null;
