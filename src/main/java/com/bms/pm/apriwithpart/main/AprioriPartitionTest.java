@@ -23,9 +23,9 @@ public class AprioriPartitionTest {
 	public static void main(String[] args) {
 
 		long startTimestamp; // start time of last execution
-		long endTimestamp = 0; // end time of last execution
+		long endTimestamp = 0; // end time of last execution		
 
-		AprioriPartitonUtils apUtils = new AprioriPartitonUtils();
+		AprioriPartitonUtils apUtils = new AprioriPartitonUtils();		
 		Scanner sc = new Scanner(System.in);
 
 		// Path of folder where discretized data is present
@@ -34,7 +34,7 @@ public class AprioriPartitionTest {
 
 		logger.debug("Partitioning Started...");
 		logger.debug("Enter file name");
-		String fileName = "AITData"; // sc.next();
+		String fileName = "alldata"; // sc.next();
 		logger.debug(fileName);
 		logger.debug("Enter number of partition");
 		int noOfPartition = 3;// sc.nextInt();
@@ -44,21 +44,18 @@ public class AprioriPartitionTest {
 		// for (int i = 0; i < noofpartition; i++) {
 		// logger.debug("Enter number of columns, per partition_" +
 		// filename + (i + 1) );
-		/*partitionDetails[0] = 8;// sc.nextInt();
+		 partitionDetails[0] = 8;// sc.nextInt();
 		partitionDetails[1] = 8;// sc.nextInt();
 		partitionDetails[2] = 9;// sc.nextInt();
-		*/
-		  partitionDetails[0] = 3;
-		  partitionDetails[1] = 3;
-		  partitionDetails[2] = 3;
-		  // sc.nextInt();
-		 // }
+		/*partitionDetails[0] = 3;// sc.nextInt();
+		partitionDetails[1] = 3;// sc.nextInt();
+		partitionDetails[2] = 3;// sc.nextInt();
+		*/// }
 
 		logger.debug("Enter min support 0.0 to 0.99 range ");
 		double minSup = 0.4;// sc.nextDouble();
 		logger.debug("min support :" + minSup);
-
-		// gives itemsets of each partition
+		
 		startTimestamp = System.currentTimeMillis();
 
 		CreatePartition createPartition = new CreatePartition();
@@ -89,24 +86,23 @@ public class AprioriPartitionTest {
 		patterns = ApPartAlgo.checkSupportCount(lstOfItmSetForEachPartition, dbdata,
 				(int) Math.ceil(minSup * dbdata.size()));
 
-		// patterns.printItemsets();
+		//patterns.printItemsets();
 
 		endTimestamp = System.currentTimeMillis();
+		
+		apUtils.printStats(ApPartAlgo.getTotalCandidateCount(), endTimestamp, startTimestamp, ApPartAlgo.getItemsetCount());
 
-		apUtils.printStats(ApPartAlgo.getTotalCandidateCount(), endTimestamp, startTimestamp,
-				ApPartAlgo.getItemsetCount());
-
-		// file name to store final out.
+		// file name to store final out.		
 		String finaloutput = filePath + listOfFileObj.get(0).getName() + "out_finalouput";
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(finaloutput));
-			apUtils.saveItemsetToFile(patterns, writer);
-			writer.close();
+		    apUtils.saveItemsetToFile(patterns, writer);
+		    writer.close();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-
-		sc.close();
+		} 
+		
+        sc.close();
 	}
 
 }
