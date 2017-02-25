@@ -53,3 +53,4 @@ target/test-classes/intermediatarydata/SJCEdata.txt
 target/test-classes/intermediatarydata/TKMdata.txt
 /target/
 target/test-classes/finaloutput/*
+src/test/resources/finaloutput/

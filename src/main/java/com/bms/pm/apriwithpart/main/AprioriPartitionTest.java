@@ -34,7 +34,7 @@ public class AprioriPartitionTest {
 
 		logger.debug("Partitioning Started...");
 		logger.debug("Enter file name");
-		String fileName = "alldata"; // sc.next();
+		String fileName = "AITData"; // sc.next();
 		logger.debug(fileName);
 		logger.debug("Enter number of partition");
 		int noOfPartition = 3;// sc.nextInt();
@@ -44,13 +44,13 @@ public class AprioriPartitionTest {
 		// for (int i = 0; i < noofpartition; i++) {
 		// logger.debug("Enter number of columns, per partition_" +
 		// filename + (i + 1) );
-		 partitionDetails[0] = 8;// sc.nextInt();
+		/* partitionDetails[0] = 8;// sc.nextInt();
 		partitionDetails[1] = 8;// sc.nextInt();
 		partitionDetails[2] = 9;// sc.nextInt();
-		/*partitionDetails[0] = 3;// sc.nextInt();
+*/		partitionDetails[0] = 3;// sc.nextInt();
 		partitionDetails[1] = 3;// sc.nextInt();
 		partitionDetails[2] = 3;// sc.nextInt();
-		*/// }
+		// }
 
 		logger.debug("Enter min support 0.0 to 0.99 range ");
 		double minSup = 0.4;// sc.nextDouble();
