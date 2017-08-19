@@ -16,56 +16,69 @@ package ca.pfv.spmf.patterns.itemset_array_integers_with_count;
 * SPMF. If not, see <http://www.gnu.org/licenses/>.
 */
 
-
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 
 /**
- * This class represents a set of itemsets, where an itemset is an array of integers 
- * with an associated support count. Itemsets are ordered by size. For
+ * This class represents a set of itemsets, where an itemset is an array of
+ * integers with an associated support count. Itemsets are ordered by size. For
  * example, level 1 means itemsets of size 1 (that contains 1 item).
-* 
+ * 
  * @author Philippe Fournier-Viger
  */
-public class Itemsets{
-	
+public class Itemsets {
+
 	final static Logger logger = Logger.getLogger(Itemsets.class);
-	/** We store the itemsets in a list named "levels".
-	 Position i in "levels" contains the list of itemsets of size i */
-	private final ArrayList<ArrayList<Itemset>> levels = new ArrayList<ArrayList<Itemset>>(); 
+	/**
+	 * We store the itemsets in a list named "levels". Position i in "levels"
+	 * contains the list of itemsets of size i
+	 */
+	private final Map<Integer, ArrayList<Itemset>> levels = new HashMap<Integer, ArrayList<Itemset>>();
 	/** the total number of itemsets **/
 	private int itemsetsCount = 0;
 	/** a name that we give to these itemsets (e.g. "frequent itemsets") */
 	private String name;
 
-	private int totalCandidateCount =0 ;
+	private int totalCandidateCount = 0;
+
 	/**
 	 * Constructor
-	 * @param name the name of these itemsets
+	 * 
+	 * @param name
+	 *            the name of these itemsets
 	 */
 	public Itemsets(String name) {
 		this.name = name;
-		levels.add(new ArrayList<Itemset>()); // We create an empty level 0 by
-												// default.
+		levels.put(0, new ArrayList<Itemset>()); // We create an empty level 0
+													// by
+													// default.
 	}
 
-	/* (non-Javadoc)
-	 * @see ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#printItemsets(int)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#
+	 * printItemsets(int)
 	 */
 	public void printItemsets() {
-		
+
 		System.out.println(" ------- " + name + " -------");
-		
+
 		int patternCount = 0;
 		int levelCount = 0;
-		// for each level (a level is a set of itemsets having the same number of items)
-		for (List<Itemset> level : levels) {			
-			
+		// for each level (a level is a set of itemsets having the same number
+		// of items)
+		for (Integer key : levels.keySet()) {
+
+			List<Itemset> level = levels.get(key);
 			// print how many items are contained in this level
 			System.out.println("  L" + levelCount + " ");
-			
+
 			// for each itemset
 			for (Itemset itemset : level) {
 				// print the itemset
@@ -75,54 +88,85 @@ public class Itemsets{
 				System.out.print("support :  " + itemset.getAbsoluteSupport());
 				patternCount++;
 				System.out.println("");
-			}			
+			}
 			levelCount++;
 		}
 		System.out.println(" --------------------------------");
 	}
 
-	/* (non-Javadoc)
-	 * @see ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#addItemset(ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemset, int)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#
+	 * addItemset(ca.pfv.spmf.patterns.itemset_array_integers_with_count.
+	 * Itemset, int)
 	 */
 	public void addItemset(Itemset itemset, int k) {
-		while (levels.size() <= k) {
-			levels.add(new ArrayList<Itemset>());
+		while (!levels.containsKey(k)) {
+			levels.put(k, new ArrayList<Itemset>());
 		}
 		levels.get(k).add(itemset);
 		itemsetsCount++;
 	}
-	
+
 	public void addItemsetList(List<Itemset> itemset, int k) {
-		while (levels.size() <= k) {
-			levels.add(new ArrayList<Itemset>());
+		while (!levels.containsKey(k)) {
+			levels.put(k, new ArrayList<Itemset>());
 		}
 		levels.get(k).addAll(itemset);
 		itemsetsCount += itemset.size();
 	}
 
-	/* (non-Javadoc)
-	 * @see ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#getLevels()
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#
+	 * getLevels()
 	 */
-	public ArrayList<ArrayList<Itemset>> getLevels() {
+	public Map<Integer, ArrayList<Itemset>> getLevels() {
 		return levels;
 	}
+	
+	public ArrayList<Itemset> getLevels(int key) {
+		
+		if(levels.containsKey(key)){
+			return levels.get(key);
+		}else {
+			throw new NullPointerException();			
+		}
+	}
 
-	/* (non-Javadoc)
-	 * @see ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#getItemsetsCount()
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#
+	 * getItemsetsCount()
 	 */
 	public int getItemsetsCount() {
 		return itemsetsCount;
 	}
 
-	/* (non-Javadoc)
-	 * @see ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#setName(java.lang.String)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#
+	 * setName(java.lang.String)
 	 */
 	public void setName(String newName) {
 		name = newName;
 	}
-	
-	/* (non-Javadoc)
-	 * @see ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#decreaseItemsetCount()
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * ca.pfv.spmf.patterns.itemset_array_integers_with_count.AbstractItemsets#
+	 * decreaseItemsetCount()
 	 */
 	public void decreaseItemsetCount() {
 		itemsetsCount--;
@@ -136,11 +180,25 @@ public class Itemsets{
 		this.totalCandidateCount = totalCandidateCount;
 	}
 
-	public void addItemsetListNew(List<Itemset> itemset, int k) {
+	public void addItemsetListNew(List<Itemset> itemset, Integer k) {
 		levels.get(k).clear();
 		levels.get(k).addAll(itemset);
-		itemsetsCount += itemset.size();	
+		itemsetsCount += itemset.size();
 	}
-	
-	
+
+	public void addtempoaryItemsetsToOrignalitemsets(Itemsets tempoaryItemsets) {
+
+		Map<Integer, ArrayList<Itemset>> itemsets = tempoaryItemsets.getLevels();
+		for (Integer key : itemsets.keySet()) {
+			List<Itemset> frequrentItemsets = itemsets.get(key);
+			if (!itemsets.containsKey(key)) {
+				levels.get(key).addAll(frequrentItemsets);
+			} else {
+				levels.get(key).clear();
+				levels.get(key).addAll(frequrentItemsets);
+			}
+		}
+
+	}
+
 }

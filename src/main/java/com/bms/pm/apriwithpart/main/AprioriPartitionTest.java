@@ -44,7 +44,7 @@ public class AprioriPartitionTest {
 		// for (int i = 0; i < noofpartition; i++) {
 		// logger.debug("Enter number of columns, per partition_" +
 		// filename + (i + 1) );
-		/* partitionDetails[0] = 8;// sc.nextInt();
+		/*partitionDetails[0] = 8;// sc.nextInt();
 		partitionDetails[1] = 8;// sc.nextInt();
 		partitionDetails[2] = 9;// sc.nextInt();
 */		partitionDetails[0] = 3;// sc.nextInt();

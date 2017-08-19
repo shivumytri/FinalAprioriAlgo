@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 
@@ -48,7 +49,10 @@ public class AprioriPartitonUtils {
 	public void saveItemsetToFile(Itemsets itemsets, BufferedWriter writer) throws IOException {
 
 		// if the result should be saved to a file
-		for (List<Itemset> listitemset : itemsets.getLevels()) {
+
+		Map<Integer, ArrayList<Itemset>> levels = itemsets.getLevels();
+		for (Integer key : levels.keySet()) {
+			List<Itemset> listitemset = levels.get(key);
 			for (Itemset itemset : listitemset) {
 				if (writer != null) {
 					writer.write(itemset.toString() + " #SUP: " + itemset.getAbsoluteSupport());
@@ -204,9 +208,12 @@ public class AprioriPartitonUtils {
 	 * 
 	 * @param levelK_1
 	 *            frequent itemsets of size k-1
+	 * @param currentLevelFQItemSets
+	 *            it the generated itemset equal to any itemset in the this
+	 *            list, that itemset set is ignored from the list
 	 * @return itemsets of size k
 	 */
-	public List<Itemset> generateCandidateSizeK(List<Itemset> levelK_1, List<Itemset> level) {
+	public List<Itemset> generateCandidateSizeK(List<Itemset> levelK_1, List<Itemset> currentLevelFQItemSets) {
 		// create a variable to store candidates
 		List<Itemset> candidates = new ArrayList<Itemset>();
 
@@ -251,13 +258,13 @@ public class AprioriPartitonUtils {
 				if (allSubsetsOfSizeK_1AreFrequent(newItemset, levelK_1)) {
 					Itemset newitemset = new Itemset(newItemset);
 					int test = -1;
-					for (Itemset itemset : level) {
+					for (Itemset itemset : currentLevelFQItemSets) {
 						test = itemset.compareTo(newitemset);
 						if (test == 0)
 							break;
 					}
-					if(test != 0)
-					candidates.add(newitemset);
+					if (test != 0)
+						candidates.add(newitemset);
 				}
 			}
 		}

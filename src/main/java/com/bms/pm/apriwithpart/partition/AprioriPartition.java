@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 
@@ -46,7 +47,7 @@ public class AprioriPartition {
 			Itemsets itemsets = null;
 			itemsets = apriori.runAlgorithm(minSup, partitonInpRef, null);
 
-			//itemsets.printItemsets();
+			// itemsets.printItemsets();
 
 			apriori.printStats();
 
@@ -58,17 +59,17 @@ public class AprioriPartition {
 
 	public Itemsets checkSupportCount(List<Itemsets> results, List<int[]> dbdata, int minsupRelative) {
 
-		List<Itemset> candidatesK = new ArrayList<>();
+		List<Itemset> newCandidatesItemSets = new ArrayList<>();
 
-		candidatesK = apUtils.generateCandidate2(results);
+		newCandidatesItemSets = apUtils.generateCandidate2(results);
 
 		Itemsets patterns = new Itemsets("FREQUENT ITEMSETS");
 
 		// add all itemsets of partition output
 		patterns = addAllItemsetOfPartition(results);
 
-		List<Itemset> level = null;
-		List<Itemset> perGenItmset = null;
+		List<Itemset> previousLevelFQItemsets = null;
+		List<Itemset> currentLevelFQItemSets = null;
 
 		int k = 2;
 		int start = 0;
@@ -77,51 +78,68 @@ public class AprioriPartition {
 
 			if (k != 2) {
 				int previousLevel = k;
-				level = patterns.getLevels().get(--previousLevel);
-				Collections.sort(level, Collections.reverseOrder());
+				previousLevelFQItemsets = patterns.getLevels().get(--previousLevel);
+				Collections.sort(previousLevelFQItemsets, Collections.reverseOrder());
 
-				try {
-					perGenItmset = patterns.getLevels().get(k);
-				} catch (IndexOutOfBoundsException e) {
-					perGenItmset = new ArrayList<Itemset>();
+				try {					
+					currentLevelFQItemSets = patterns.getLevels(k);
+				} catch (NullPointerException e) {
+					currentLevelFQItemSets = new ArrayList<Itemset>();
 				}
-				candidatesK = apUtils.generateCandidateSizeK(level, perGenItmset);
+
+				// this method generates next level itemset from the previous
+				// level itemset.
+				// it takes two parameter previousLevelFQItemsets and
+				// currentLevelFQItemSets(valid only if that level has FQ while
+				// partitioning.)
+				// currentLevelFQItemSets is used to generate only new fQ
+				// Itemsets.
+				newCandidatesItemSets = apUtils.generateCandidateSizeK(previousLevelFQItemsets, currentLevelFQItemSets);
 			}
 
 			// we add the number of candidates generated to the total
-			totalCandidateCount += candidatesK.size();
+			totalCandidateCount += newCandidatesItemSets.size();
 
-			if (k == 2 || perGenItmset.size() != 0 ) {
-				level = getFrequentItemsets(candidatesK, dbdata, minsupRelative);
-				start = k;
-			} else
-				level = candidatesK;
+			Itemsets tempoaryItemsets = new Itemsets("FREQUENT ITEMSETS");
 
-			patterns.addItemsetList(level, k);
+			if (k == 2 || k == 3 || start == 3) {
+				
+				tempoaryItemsets = getFrequentItemsets(tempoaryItemsets, dbdata, minsupRelative);
+				
+				patterns.addtempoaryItemsetsToOrignalitemsets(tempoaryItemsets);
+				
+				currentLevelFQItemSets = getFrequentItemsets(newCandidatesItemSets, dbdata, minsupRelative);
+				
+				start = 0;
+				
+				tempoaryItemsets = new Itemsets("FREQUENT ITEMSETS");
+				
+			} else {				
+				tempoaryItemsets.addItemsetList(newCandidatesItemSets, k);
+				start += 1;
+
+			}
+
+			patterns.addItemsetList(currentLevelFQItemSets, k);
 
 			// we will generate larger itemsets next.
 			k++;
-		} while (level.isEmpty() == false);
+		} while (currentLevelFQItemSets.isEmpty() == false);
 
-		patterns = getFrequentItemsets(patterns, dbdata, minsupRelative, ++start);
+		// patterns = getFrequentItemsets(patterns, dbdata, minsupRelative, 4);
 
 		return patterns;
 	}
 
-	private Itemsets getFrequentItemsets(Itemsets patterns, List<int[]> dbdata, int minsupRelative,int start) {
+	private Itemsets getFrequentItemsets(Itemsets tempoaryItemsets, List<int[]> dbdata, int minsupRelative) {		
 
-		Itemsets pattern = new Itemsets("Final output");
-		
-		pattern = patterns;
-		
-		ArrayList<ArrayList<Itemset>> levels = patterns.getLevels();
+		Map<Integer, ArrayList<Itemset>> levels = tempoaryItemsets.getLevels();
 
-		int k = start;
-		for (int l=start; l < levels.size(); l++) {
-
+		for (Integer key : levels.keySet()) {
 			for (int[] transaction : dbdata) {
 				// for each candidate:
-				loopCand: for (Itemset candidate : levels.get(l)) {
+				List<Itemset> candidatesK = levels.get(key);
+				loopCand: for (Itemset candidate : candidatesK) {
 					// a variable that will be use to check if
 					// all items of candidate are in this transaction
 					int pos = 0;
@@ -158,7 +176,7 @@ public class AprioriPartition {
 			}
 
 			List<Itemset> level = new ArrayList<Itemset>();
-			for (Itemset candidate : levels.get(l)) {
+			for (Itemset candidate : levels.get(key)) {
 				// if the support is > minsup
 				if (candidate.getAbsoluteSupport() >= minsupRelative) {
 					itemsetCount++;
@@ -166,12 +184,10 @@ public class AprioriPartition {
 					level.add(candidate);
 				}
 			}
+			tempoaryItemsets.addItemsetListNew(level, key);
 
-			pattern.addItemsetListNew(level, k);
-			k++;
 		}
-
-		return pattern;
+		return tempoaryItemsets;
 
 	}
 
